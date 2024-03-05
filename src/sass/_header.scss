@@ -1,0 +1,175 @@
+.header {
+  background: #191919;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 30px 70px;
+
+  @include mobile {
+    padding: 20px 16px;
+  }
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    width: 36px;
+    height: 22px;
+
+    @include mobile {
+      width: 30px;
+      height: 18px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    color: #fff;
+    font-family: "GetVoIP Grotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-around;
+  align-items: center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.phone-info {
+  margin-right: 32px;
+
+  .phone-number {
+    color: #fff;
+    font-family: Roboto-light;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+  }
+}
+
+.phone-popup {
+  cursor: pointer;
+  margin-right: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 264px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 2px solid #ff4f28;
+
+  color: #fff;
+
+  font-family: Roboto-medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.35;
+
+  gap: 14px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 102px;
+  height: 34px;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-family: Roboto-light;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  border-radius: 20px;
+  background: #3e3e3e;
+  text-transform: uppercase;
+
+  .ua {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff4f28;
+    border-radius: 20px;
+    width: 56px;
+    height: 34px;
+  }
+
+  .ru {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 34px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+
+    border-radius: 20px;
+    background: #3e3e3e;
+
+    &:active {
+      background: #ff4f28;
+    }
+  }
+}
+
+.wrap-mobile {
+  display: flex;
+  margin-left: auto;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  margin-right: 25px;
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+  cursor: pointer;
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  cursor: pointer;
+  @include desktop {
+    display: none;
+  }
+}

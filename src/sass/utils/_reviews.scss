@@ -1,0 +1,29 @@
+@mixin media-query($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media-query(0px, 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-query(768px, 1439px) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+}

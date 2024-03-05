@@ -1,0 +1,144 @@
+.hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100vh;
+  color: white;
+
+  @include mobile {
+    height: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero-title {
+    width: 1109px;
+    color: #fff;
+    font-family: "GetVoIP Grotesque";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include mobile {
+      width: 100%;
+      font-size: 32px;
+      line-height: 1.25;
+    }
+  }
+
+  .hero-subtitle {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.bg {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%),
+    url(../images/hero.png),
+    lightgray 0px -18.059px / 100% 115.399% no-repeat;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include mobile {
+    align-items: center;
+  }
+
+  &__descr {
+    color: #fff;
+    font-family: Roboto-light;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+
+    margin-top: 34px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 35px;
+    color: #f5f5f5;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(151deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
+    }
+
+    @include mobile {
+      width: 288px;
+      color: #f5f5f5;
+      font-family: Roboto-light;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.35;
+
+      margin-top: 25px;
+    }
+  }
+}
+
+.privileges-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 136px;
+
+  @include mobile {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    width: 343px;
+    height: 136px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+
+    @include mobile {
+      width: auto;
+    }
+
+    &-title,
+    &-descr {
+      color: #fff;
+      font-family: Roboto-medium;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.35;
+
+      @include mobile {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    &-descr {
+      margin-top: 10px;
+      font-family: Roboto-light;
+      font-weight: 300;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+}

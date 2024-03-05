@@ -1,1 +1,62 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import "~node_modules/modern-normalize/modern-normalize.css";
+
+@font-face {
+  font-family: "GetVoIP Grotesque";
+  src: url("../fonts/GetVoIPGrotesque.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-medium";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  @include mobile {
+    padding: 0 16px;
+  }
+  @include tablet {
+    padding: 0 40px;
+    width: 768px;
+  }
+  @include desktop {
+    padding: 0 60px;
+    width: 1440px;
+  }
+}
+
+.content {
+  margin: 0 auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1440px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+ul li {
+  list-style: none;
+}
