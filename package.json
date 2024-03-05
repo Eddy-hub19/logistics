@@ -2,14 +2,14 @@
   "name": "logistics",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/logistics",
+  "homepage": "https://eddy-hub19.github.io/logistics/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /logistics/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/logistics.git"
+    "url": "git+https://github.com/eddy-hub19.github.io/logistics.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
