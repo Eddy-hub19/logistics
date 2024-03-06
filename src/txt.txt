@@ -1,6 +1,5 @@
 1. header ✅
 2. hero ✅
-3. main
 4. our-fleet
 5. why-choose-us
 6. cargo-advantages

@@ -1,8 +1,6 @@
 .btn {
   border: none;
   cursor: pointer;
-  // width: 334px;
-  // height: 64px;
   padding: 18px 25px;
   font-family: Roboto-light;
   // font-size: 20px;
@@ -11,14 +9,13 @@
   line-height: 1.35;
   background: linear-gradient(151deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
 
-  &:hover,
-  &:focus {
-    background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
-  }
-
   &:active svg {
     color: #ff4f28;
     background-color: white;
     border-radius: 50%;
+  }
+
+  &:hover {
+    background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
   }
 }
