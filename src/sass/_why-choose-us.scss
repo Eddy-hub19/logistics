@@ -1,0 +1,227 @@
+.why-choose-us {
+  padding-top: 111px;
+  padding-bottom: 120px;
+  background: #191919;
+
+  @include mobile {
+    padding-top: 31px;
+    padding-bottom: 24px;
+  }
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .wrap-wrap {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 39px;
+    padding-right: 51px;
+
+    @include mobile {
+      margin-top: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: "GetVoIP Grotesque";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+    strong {
+      color: #ff4f28;
+    }
+
+    @include mobile {
+      color: #fff;
+      font-family: "GetVoIP Grotesque";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    @include tablet {
+      color: #fff;
+      font-family: "GetVoIP Grotesque";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.why-choose-us-wrap-descr {
+  width: 846px;
+
+  margin-top: 39px;
+  color: #fff;
+  font-family: Roboto-light;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.35;
+
+  @include mobile {
+    width: auto;
+    margin-top: 24px;
+  }
+
+  @include tablet {
+    width: auto;
+    margin-top: 24px;
+  }
+}
+
+.why-choose-us-advantages {
+  &__title {
+    color: #fff;
+    font-family: Roboto-medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+}
+
+.why-choose-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__item {
+    width: 837px;
+    list-style: inside url(../images/down-why-choose.png);
+    color: #fff;
+    font-family: Roboto-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.35;
+    gap: 30px;
+
+    @include mobile {
+      width: auto;
+    }
+    @include tablet {
+      width: auto;
+    }
+  }
+}
+
+.form {
+  width: 418px;
+  height: 552px;
+  flex-shrink: 0;
+  padding-top: 51px;
+  padding: 51px 35px;
+  background: #202020;
+
+  @include mobile {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    padding: 21px 15px;
+  }
+
+  @include tablet {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .form-descr {
+    color: #fff;
+    text-align: center;
+
+    width: 349px;
+    font-family: Roboto-medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 26px;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    height: 69px;
+    padding: 23px 30px;
+    color: #434343;
+
+    font-family: Roboto-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.35;
+
+    &:last-of-type {
+      margin-top: 15px;
+    }
+  }
+}
+
+::placeholder {
+  color: #434343;
+  font-family: Roboto-light;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.why-choose-us-btn {
+  margin: 30px auto;
+  width: 348px;
+  height: 64px;
+  justify-content: center;
+
+  @include mobile {
+    width: 100%;
+  }
+}

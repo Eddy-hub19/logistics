@@ -2,6 +2,11 @@
   &__title {
     margin-top: 100px;
     margin-bottom: 40px;
+
+    @include mobile {
+      margin-top: 60px;
+      margin-bottom: 15px;
+    }
   }
 
   &__descr {
@@ -36,7 +41,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background: black;
+      background: #191919;
+      width: 166px;
+      height: 35px;
       padding: 6px 12px 5px 19px;
       margin-bottom: 15px;
 
@@ -89,8 +96,23 @@
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+  @include tablet {
+    font-size: 30px;
+  }
 }
 
 .our-fleet-btn {
   margin: 50px auto;
+  width: 334px;
+  height: 64px;
+  flex-shrink: 0;
+
+  @include mobile {
+    width: 100%;
+  }
 }

@@ -92,6 +92,14 @@
       border-top: 29px solid #ff4f28;
       border-left: 27px solid #0000;
       border-right: 23px solid #0000;
+
+      // clip-path: inset(20% 22% 47% 28%);
+      // border-top: 25px solid #ff4f28;
+      // border-left: 30px solid #0000;
+      // border-right: 22px solid #0000;
+      // position: absolute;
+      // top: 21px;
+      // left: 5px;
     }
 
     @include mobile {
@@ -145,12 +153,13 @@
     transition: all 0.5s ease-in-out;
 
     &:hover {
-      background: linear-gradient(151deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
+      background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
     }
 
     @include mobile {
       width: 288px;
-      // width: 100%;
+      width: 100%;
+      justify-content: center;
       color: #f5f5f5;
       font-family: Roboto-light;
       font-size: 16px;
@@ -187,9 +196,6 @@
 
   &__item {
     width: 343px;
-
-    // width: calc(100% / 3 - 40px);
-
     height: 136px;
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.4);
