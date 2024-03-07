@@ -11,6 +11,13 @@
     padding-bottom: 30px;
   }
 
+  @include tablet {
+    height: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .hero-title {
     width: 1109px;
     color: #fff;
@@ -26,10 +33,71 @@
       font-size: 32px;
       line-height: 1.25;
     }
+
+    @include tablet {
+      width: auto;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: GetVoIP Grotesque;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
 
   .hero-subtitle {
+    position: relative;
     @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .abstraction1 {
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 18px;
+      border-top: 13px solid #ff4f28;
+      border-left: 8px solid #0000;
+      border-right: 7px solid #0000;
+      position: absolute;
+      top: 21px;
+      left: 24px;
+      transform: rotate(180deg);
+    }
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  .abstraction2 {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 7px;
+
+      clip-path: inset(24% 23% 46% 26%);
+      border-top: 29px solid #ff4f28;
+      border-left: 27px solid #0000;
+      border-right: 23px solid #0000;
+    }
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
       display: none;
     }
   }
@@ -99,24 +167,40 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 136px;
 
   @include mobile {
     margin-top: 30px;
-    flex-direction: column;
     gap: 10px;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
   }
 
   &__item {
     width: 343px;
+
+    // width: calc(100% / 3 - 40px);
+
     height: 136px;
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.4);
     padding: 15px 20px;
 
+    @include tablet {
+      width: calc(100% / 3 - 30px);
+    }
+
     @include mobile {
-      width: auto;
+      width: calc(100% / 1);
     }
 
     &-title,
