@@ -1,0 +1,96 @@
+.our-fleet {
+  &__title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  &__descr {
+    color: #434343;
+    font-family: Roboto-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.35;
+    margin-bottom: 40px;
+  }
+}
+
+.our-fleet-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 49px;
+
+  @include mobile {
+    gap: 16px;
+  }
+
+  @include tablet {
+    gap: 30px;
+  }
+
+  &__wrap {
+    position: relative;
+
+    &-descr {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: black;
+      padding: 6px 12px 5px 19px;
+      margin-bottom: 15px;
+
+      color: #fff;
+      font-family: Roboto-light;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.35;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        background: #ff4f28;
+        width: 100%;
+        height: 15px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: calc(100% / 4 - 49px);
+
+    &-img {
+      max-width: 100%;
+      display: block;
+    }
+
+    @include mobile {
+      width: calc(100% / 2 - 30px);
+    }
+
+    @include tablet {
+      width: calc(100% / 4 - 30px);
+    }
+  }
+}
+
+.title {
+  color: #434343;
+  font-family: "GetVoIP Grotesque";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.our-fleet-btn {
+  margin: 50px auto;
+}
