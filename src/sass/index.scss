@@ -8,13 +8,13 @@
 @import "./hero";
 @import "./our-fleet";
 @import "./why-choose-us";
-// @import "./cargo-advantages";
+@import "./cargo-advantages";
+@import "./transport-services.scss";
 
 @import "./swiper";
 
 .list {
   display: flex;
-  flex-direction: column;
 }
 
 .item {
@@ -32,4 +32,13 @@
   @include tablet {
     width: auto;
   }
+}
+
+.highlighted-text {
+  color: #ff4f28;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

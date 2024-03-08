@@ -1,0 +1,31 @@
+.transport-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #191919;
+
+  &__title{
+    color: white;
+  }
+
+  .all-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.transport-services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.transport-services-gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 50%;
+  }
+}

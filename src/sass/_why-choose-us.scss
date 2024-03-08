@@ -47,9 +47,6 @@
     font-weight: 700;
     line-height: 1.25;
     text-transform: uppercase;
-    strong {
-      color: #ff4f28;
-    }
 
     @include mobile {
       color: #fff;
@@ -100,6 +97,7 @@
 }
 
 .why-choose-us-advantages {
+
   &__title {
     color: #fff;
     font-family: Roboto-medium;

@@ -1,8 +1,9 @@
 .swiper-container {
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
-  height: 500px;
+  height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 .swiper-button-prev,
@@ -10,4 +11,14 @@
   @include desktop {
     display: none !important;
   }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #ff4f28;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #434343;
 }
