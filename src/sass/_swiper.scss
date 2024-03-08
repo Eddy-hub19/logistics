@@ -1,0 +1,13 @@
+.swiper-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include desktop {
+    display: none !important;
+  }
+}
