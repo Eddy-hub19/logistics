@@ -1,7 +1,7 @@
 1. header ✅
 2. hero ✅
 4. our-fleet 
-5. why-choose-us
+5. why-choose-us ✅
 6. cargo-advantages
 7. transport-services
 8. pricing-factors

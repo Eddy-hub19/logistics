@@ -1,12 +1,35 @@
-@import './utils/reviews';
-@import './btns';
-@import './popup';
-@import './hamburger';
-@import './common';
-@import './header';
-@import './dropdown';
-@import './hero';
-@import './our-fleet';
-@import './why-choose-us';
+@import "./utils/reviews";
+@import "./btns";
+@import "./popup";
+@import "./hamburger";
+@import "./common";
+@import "./header";
+@import "./dropdown";
+@import "./hero";
+@import "./our-fleet";
+@import "./why-choose-us";
+// @import "./cargo-advantages";
 
-@import './swiper';
+@import "./swiper";
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  list-style: inside url(../images/down-why-choose.png);
+  color: white;
+  font-family: Roboto-light;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.35;
+
+  @include mobile {
+    width: auto;
+  }
+  @include tablet {
+    width: auto;
+  }
+}
