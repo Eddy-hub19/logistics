@@ -1,8 +1,9 @@
 @import "./utils/reviews";
+@import "./utils/common";
+
 @import "./btns";
 @import "./popup";
 @import "./hamburger";
-@import "./common";
 @import "./header";
 @import "./dropdown";
 @import "./hero";
@@ -10,15 +11,30 @@
 @import "./why-choose-us";
 @import "./cargo-advantages";
 @import "./transport-services.scss";
+@import "./pricing-factors";
 
 @import "./swiper";
 
 .list {
   display: flex;
+  padding-left: 27px;
+
+  .item {
+    position: relative;
+    &:before {
+      content: url('../images/down-why-choose.png');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: -27px;
+      top: 0px;
+      width: 17px;
+    }
+  }
 }
 
 .item {
-  list-style: inside url(../images/down-why-choose.png);
   color: white;
   font-family: Roboto-light;
   font-size: 18px;

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const popup = document.querySelector('.phone-popup-form-popup');
+  const popup = document.querySelector('.phone-modal-form-js');
   const contentPopup = document.querySelector('.form-popup');
   const formCloseIcon = document.querySelector('.close-icon');
   const phonePopup = document.querySelector('.phone-popup-mobile');

@@ -3,6 +3,12 @@
 }
 
 .header-content {
+  // position: fixed;
+  // top: 50px;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: 99999;
+  background: #191919;
   display: flex;
   align-items: center;
   padding: 30px 60px 20px 70px;
@@ -27,7 +33,7 @@
 
 .logo-wrap {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   @include tablet {
     display: flex;
@@ -94,6 +100,15 @@
   .phone-popup.info-spacing {
     margin-right: 43px;
   }
+
+  .phone-popup-title {
+    color: #fff;
+    font-family: Roboto-medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.35;
+  }
 }
 
 .phone-info {
@@ -126,7 +141,7 @@
   line-height: 1.35;
 
   gap: 14px;
-  padding: 16px 21px 16px 31px;
+  padding: 16px 21px 16px 32px;
 }
 
 .lang {
@@ -147,6 +162,7 @@
   border-radius: 20px;
   background: #3e3e3e;
   text-transform: uppercase;
+  position: relative;
 
   .ua {
     display: flex;
@@ -156,9 +172,19 @@
     border-radius: 20px;
     width: 56px;
     height: 34px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 
   .ru {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;

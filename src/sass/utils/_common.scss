@@ -43,6 +43,10 @@
   }
 }
 
+html,body {
+  scroll-behavior: smooth;
+}
+
 a {
   color: white;
   text-decoration: none;

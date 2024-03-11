@@ -1,32 +1,25 @@
-import Swiper from 'swiper';
-
 document.addEventListener('DOMContentLoaded', function () {
-  // Проверяем, является ли текущее устройство мобильным или планшетным
   const isMobileOrTablet = window.innerWidth <= 1024;
-
   if (isMobileOrTablet) {
     const swiper = new Swiper('.swiper-container', {
-      // Опциональные параметры
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 2,
-      effect: 'fade',
-
-      // Если нужна пагинация
+      slidesPerView: 'auto',
+      spaceBetween: 20,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination', // Вказуємо контейнер для пагінації
+        clickable: true, // Робимо кружечки клікабельними
       },
-
-      // Навигационные стрелки
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next', // Вказуємо контейнер для стрілки "Вперед"
+        prevEl: '.swiper-button-prev', // Вказуємо контейнер для стрілки "Назад"
       },
-
-      // И если нужна полоса прокрутки
-      scrollbar: {
-        el: '.swiper-scrollbar',
+      breakpoints: {
+        // Налаштування для мобільних пристроїв
+        732: {
+          slidesPerView: 2, // Показувати 2 слайди
+          spaceBetween: 20,
+        },
       },
+      // Додаткові налаштування, якщо потрібно
     });
   }
 });
