@@ -1,5 +1,6 @@
 @import "./utils/reviews";
 @import "./utils/common";
+@import "./swiper";
 
 @import "./btns";
 @import "./popup";
@@ -12,12 +13,19 @@
 @import "./cargo-advantages";
 @import "./transport-services.scss";
 @import "./pricing-factors";
+@import "./popular-vehicles";
+@import "./cargo-features";
+@import "./footer";
 
-@import "./swiper";
+
 
 .list {
   display: flex;
   padding-left: 27px;
+
+  @include mobile {
+    padding-left: 20px;
+  }
 
   .item {
     position: relative;

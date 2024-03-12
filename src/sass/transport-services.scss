@@ -55,7 +55,6 @@
   position: relative;
 }
 
-
 .gallery-1 {
   width: 469px;
   height: 312px;
@@ -72,4 +71,6 @@
   width: 531px;
   height: 451px;
   object-fit: cover;
+  border-right: 10px solid #ff4f28;
+  border-bottom: 10px solid #ff4f28;
 }

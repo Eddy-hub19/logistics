@@ -1,0 +1,48 @@
+.cargo-features {
+  padding-top: 91px;
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 39px;
+  }
+}
+
+.cargo-features-container {
+  border: 2px solid #ff4f28;
+  padding: 40px 25px;
+
+  .cargo-features-descr {
+    color: #434343;
+
+    font-family: Roboto-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.35;
+  }
+}
+
+.cargo-features-wrap {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .cargo-features-descr {
+    width: 100%;
+    padding-right: 22px;
+  }
+}
+
+.cargo-features-btn {
+  width: 334px;
+  height: 64px;
+
+  @include mobile {
+    margin-top: 30px;
+  }
+}

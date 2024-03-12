@@ -2,6 +2,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   height: calc(100vh - 106px);
+  height: 100vh;
   color: white;
 
   @include mobile {
@@ -92,14 +93,6 @@
       border-top: 29px solid #ff4f28;
       border-left: 27px solid #0000;
       border-right: 23px solid #0000;
-
-      // clip-path: inset(20% 22% 47% 28%);
-      // border-top: 25px solid #ff4f28;
-      // border-left: 30px solid #0000;
-      // border-right: 22px solid #0000;
-      // position: absolute;
-      // top: 21px;
-      // left: 5px;
     }
 
     @include mobile {
@@ -162,7 +155,7 @@
       justify-content: center;
       color: #f5f5f5;
       font-family: Roboto-light;
-      font-size: 16px;
+      font-size: 15px;
       font-style: normal;
       font-weight: 400;
       line-height: 1.35;

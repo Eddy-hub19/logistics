@@ -13,6 +13,10 @@
   line-height: 1.35;
   background: linear-gradient(151deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
 
+  @include mobile {
+    font-size: 15px;
+  }
+
   &:active svg {
     color: #ff4f28;
     background-color: white;

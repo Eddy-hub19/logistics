@@ -4,9 +4,9 @@
 5. why-choose-us ✅
 6. cargo-advantages ✅
 7. transport-services ✅
-8. pricing-factors
-9. popular-vehicles
-10. cargo-features
+8. pricing-factors ✅
+9. popular-vehicles ✅
+10. cargo-features ✅
 
 
 Шрифт Desktop

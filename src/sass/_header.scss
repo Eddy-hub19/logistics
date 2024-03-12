@@ -1,16 +1,20 @@
 .header {
   background: #191919;
+  // display: flex;
+  // justify-content: center;
 }
 
 .header-content {
   // position: fixed;
+  // z-index: 99999;
+  // width: 100%;
   // top: 50px;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  // z-index: 99999;
   background: #191919;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 30px 60px 20px 70px;
 
   @include mobile {
@@ -72,9 +76,12 @@
   }
 }
 
+.nav-margin {
+  margin-left: auto;
+}
+
 .nav {
   display: flex;
-  margin-left: auto;
   justify-content: space-around;
   align-items: center;
 
@@ -142,6 +149,16 @@
 
   gap: 14px;
   padding: 16px 21px 16px 32px;
+
+  &:hover {
+    border-radius: 100px;
+    border: 2px solid #ff4f28;
+    background: linear-gradient(112deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
+  }
+
+  &:active {
+    background: transparent;
+  }
 }
 
 .lang {

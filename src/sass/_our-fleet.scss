@@ -35,8 +35,6 @@
   flex-wrap: wrap;
   gap: 49px;
 
-  // justify-content: flex-start;
-
   @include mobile {
     gap: 16px;
   }
@@ -140,6 +138,21 @@
   flex-shrink: 0;
 
   @include mobile {
+    width: auto;
+  }
+}
+
+.our-fleet-text {
+  width: 293px;
+  color: #434343;
+  font-family: "Roboto-light";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.35;
+
+  @include mobile {
+    font-size: 15px;
     width: auto;
   }
 }
