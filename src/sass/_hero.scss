@@ -134,35 +134,35 @@
     margin-top: 34px;
   }
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    width: 334px;
-    height: 64px;
-    margin-top: 35px;
-    color: #f5f5f5;
-    font-size: 20px;
-    transition: all 0.5s ease-in-out;
+  // &__btn {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 11px;
+  //   width: 334px;
+  //   height: 64px;
+  //   margin-top: 35px;
+  //   color: #f5f5f5;
+  //   font-size: 20px;
+  //   transition: all 0.5s ease-in-out;
 
-    &:hover {
-      background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
-    }
+  //   &:hover {
+  //     background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
+  //   }
 
-    @include mobile {
-      width: 288px;
-      width: 100%;
-      justify-content: center;
-      color: #f5f5f5;
-      font-family: Roboto-light;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.35;
+  //   @include mobile {
+  //     width: 288px;
+  //     width: 100%;
+  //     justify-content: center;
+  //     color: #f5f5f5;
+  //     font-family: Roboto-light;
+  //     font-size: 15px;
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     line-height: 1.35;
 
-      margin-top: 25px;
-    }
-  }
+  //     margin-top: 25px;
+  //   }
+  // }
 }
 
 .privileges-list {
