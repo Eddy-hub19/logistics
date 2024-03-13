@@ -1,9 +1,10 @@
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
-  height: calc(100vh - 106px);
+  // height: calc(100vh - 106px);
   height: 100vh;
   color: white;
+  margin-top: 106px;
 
   @include mobile {
     height: 100%;

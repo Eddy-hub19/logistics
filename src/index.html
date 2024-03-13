@@ -20,7 +20,7 @@
   <include src="./partials/header.html"></include>
   <main>
     <include src="./partials/hero.html"></include>
-    <include src="./partials/our-fleet1.html"></include>
+    <include src="./partials/our-fleet.html"></include>
     <include src="./partials/why-choose-us.html"></include>
     <include src="./partials/cargo-advantages.html"></include>
     <include src="./partials/transport-services.html"></include>
@@ -31,5 +31,24 @@
   <include src="./partials/footer.html"></include>
 </body>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const isMobileOrTablet = window.innerWidth <= 768;
+    if (isMobileOrTablet) {
+      const swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
+      });
+    }
+  });
+</script>
 
 </html>
