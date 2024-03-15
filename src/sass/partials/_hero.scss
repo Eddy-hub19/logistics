@@ -1,13 +1,17 @@
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
-  // height: calc(100vh - 106px);
   height: 100vh;
+  height: calc(100vh - 106px);
   color: white;
-  margin-top: 106px;
+
+  @include desktop {
+    margin-top: 106px;
+  }
 
   @include mobile {
     height: 100%;
+    margin-top: 50px;
 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -15,14 +19,14 @@
 
   @include tablet {
     height: 100%;
-
+    margin-top: 150px;
     padding-top: 30px;
     padding-bottom: 100px;
   }
 
   .hero-title {
-    width: 1109px;
-    color: #fff;
+    max-width: 1109px;
+    color: $white-color;
     font-family: "GetVoIP Grotesque";
     font-size: 80px;
     font-style: normal;
@@ -38,18 +42,18 @@
 
     @include tablet {
       width: auto;
-      color: #fff;
-      text-transform: uppercase;
-      font-family: GetVoIP Grotesque;
+      color: $white-color;
       font-size: 60px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+    }
+
+    @media screen and (min-width: 1438px) and (max-width: 1600px) {
+      max-width: 100%;
     }
   }
 
   .hero-subtitle {
     position: relative;
+    z-index: 1;
     @include mobile {
       display: none;
     }
@@ -63,13 +67,13 @@
 
     &:after {
       content: "";
-      width: 20px;
+      width: 19px;
       height: 18px;
       border-top: 13px solid #ff4f28;
       border-left: 8px solid #0000;
-      border-right: 7px solid #0000;
+      border-right: 6px solid #0000;
       position: absolute;
-      top: 21px;
+      top: 20px;
       left: 24px;
       transform: rotate(180deg);
     }
@@ -86,14 +90,14 @@
 
     &:after {
       content: "";
+      clip-path: inset(24% 23% 46% 26%);
+      border-top: 30px solid #ff4f28;
+      border-left: 27px solid #0000;
+      border-right: 25px solid #0000;
       position: absolute;
       top: 18px;
-      left: 7px;
-
-      clip-path: inset(24% 23% 46% 26%);
-      border-top: 29px solid #ff4f28;
-      border-left: 27px solid #0000;
-      border-right: 23px solid #0000;
+      left: 6px;
+      z-index: -1;
     }
 
     @include mobile {
@@ -115,6 +119,21 @@
   background-size: cover;
 }
 
+.wrap-hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 70vh;
+
+  @include mobile {
+    height: auto;
+    margin-top: 30px;
+  }
+  @include tablet {
+    height: auto;
+  }
+}
+
 .hero-info {
   display: flex;
   flex-direction: column;
@@ -125,8 +144,8 @@
   }
 
   &__descr {
-    color: #fff;
-    font-family: Roboto-light;
+    color: $white-color;
+    font-family: $font-roboto-light;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -135,35 +154,30 @@
     margin-top: 34px;
   }
 
-  // &__btn {
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 11px;
-  //   width: 334px;
-  //   height: 64px;
-  //   margin-top: 35px;
-  //   color: #f5f5f5;
-  //   font-size: 20px;
-  //   transition: all 0.5s ease-in-out;
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+    width: 334px;
+    height: 64px;
+    margin-top: 35px;
+    color: #f5f5f5;
+    font-size: 20px;
 
-  //   &:hover {
-  //     background: linear-gradient(212deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
-  //   }
+    @include mobile {
+      width: 288px;
+      width: 100%;
+      color: #f5f5f5;
+      font-family: $font-roboto-light;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.35;
 
-  //   @include mobile {
-  //     width: 288px;
-  //     width: 100%;
-  //     justify-content: center;
-  //     color: #f5f5f5;
-  //     font-family: Roboto-light;
-  //     font-size: 15px;
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     line-height: 1.35;
-
-  //     margin-top: 25px;
-  //   }
-  // }
+      margin-top: 25px;
+    }
+  }
 }
 
 .privileges-list {
@@ -172,7 +186,8 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: 10%;
+
+  margin-top: auto;
 
   @include mobile {
     margin-top: 30px;
@@ -190,7 +205,7 @@
 
   &__item {
     width: 343px;
-    height: 136px;
+    height: auto;
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.4);
     padding: 15px 20px;
@@ -205,7 +220,7 @@
 
     &-title,
     &-descr {
-      color: #fff;
+      color: $white-color;
       font-family: Roboto-medium;
       font-size: 18px;
       font-style: normal;
@@ -213,14 +228,14 @@
       line-height: 1.35;
 
       @include mobile {
-        color: #fff;
+        color: $white-color;
         font-size: 16px;
         font-weight: 500;
       }
     }
     &-descr {
       margin-top: 10px;
-      font-family: Roboto-light;
+      font-family: $font-roboto-light;
       font-weight: 300;
 
       @include mobile {

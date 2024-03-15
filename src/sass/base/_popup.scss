@@ -1,14 +1,15 @@
 .phone-popup-mobile {
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 70px;
   gap: 47px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   align-items: center;
   background: white;
   color: black;
   display: none;
+  overflow: hidden;
 
   .phone-popup-title {
     color: black;
@@ -28,13 +29,13 @@
   align-items: center;
   margin-top: 143px;
   gap: 47px;
+  background: white;
 }
 
 .mobile-svg {
   cursor: pointer;
 }
 
-
-.form-close-icon{
+.form-close-icon {
   cursor: pointer;
 }

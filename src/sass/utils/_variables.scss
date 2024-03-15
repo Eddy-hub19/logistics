@@ -1,0 +1,39 @@
+// colors
+$primary-color: #191919;
+$color-accent: #ff4f28;
+$secondary-color: #434343;
+$white-color: #fff;
+
+// fonts
+$font-getvoip: "Getvoip grotesque", sans-serif;
+$font-roboto-light: "Roboto-light", sans-serif;
+$font-roboto-medium: "Roboto-medium", sans-serif;
+
+// weight
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-light: 300;
+
+h1 {
+  font-family: $font-getvoip;
+  font-size: 60px;
+  font-weight: $weight-regular;
+}
+
+h2 {
+  font-family: $font-getvoip;
+  font-size: 40px;
+  font-weight: $weight-regular;
+}
+
+h3 {
+  font-family: $font-roboto-medium;
+  font-size: 18px;
+  font-weight: $weight-medium;
+}
+
+p {
+  font-family: $font-roboto-light;
+  font-size: 18px;
+  font-weight: $weight-light;
+}

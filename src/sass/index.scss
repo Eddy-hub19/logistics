@@ -1,21 +1,26 @@
+// utils
+@import "./utils/variables";
 @import "./utils/reviews";
 @import "./utils/common";
-@import "./swiper";
+@import "./utils/swiper";
 
-@import "./btns";
-@import "./popup";
-@import "./hamburger";
-@import "./header";
-@import "./dropdown";
-@import "./hero";
-@import "./our-fleet";
-@import "./why-choose-us";
-@import "./cargo-advantages";
-@import "./transport-services.scss";
-@import "./pricing-factors";
-@import "./popular-vehicles";
-@import "./cargo-features";
-@import "./footer";
+// base
+@import "./base/btns";
+@import "./base/popup";
+@import "./base/hamburger";
+@import "./base/dropdown";
+
+// partials
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/our-fleet";
+@import "./partials/why-choose-us";
+@import "./partials/cargo-advantages";
+@import "./partials/transport-services.scss";
+@import "./partials/pricing-factors";
+@import "./partials/popular-vehicles";
+@import "./partials/cargo-features";
+@import "./partials/footer";
 
 
 
@@ -44,7 +49,7 @@
 
 .item {
   color: white;
-  font-family: Roboto-light;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;

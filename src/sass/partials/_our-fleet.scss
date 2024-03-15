@@ -15,7 +15,7 @@
 
   &__descr {
     color: #434343;
-    font-family: Roboto-light;
+    font-family: $font-roboto-light;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -56,8 +56,8 @@
       padding: 6px 12px 5px 19px;
       margin-bottom: 15px;
 
-      color: #fff;
-      font-family: Roboto-light;
+      color: $white-color;
+      font-family: $font-roboto-light;
       font-size: 18px;
       font-style: normal;
       font-weight: 300;
@@ -145,7 +145,7 @@
 .our-fleet-text {
   width: 293px;
   color: #434343;
-  font-family: "Roboto-light";
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;

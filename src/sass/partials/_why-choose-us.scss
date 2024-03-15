@@ -38,7 +38,7 @@
   }
 
   &__title {
-    color: #fff;
+    color: $white-color;
     font-family: "GetVoIP Grotesque";
     font-size: 60px;
     font-style: normal;
@@ -65,8 +65,8 @@
   width: 846px;
 
   margin-top: 39px;
-  color: #fff;
-  font-family: Roboto-light;
+  color: $white-color;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -85,7 +85,7 @@
 
 .why-choose-us-advantages {
   &__title {
-    color: #fff;
+    color: $white-color;
     font-family: Roboto-medium;
     font-size: 18px;
     font-style: normal;
@@ -109,8 +109,8 @@
   gap: 20px;
 
   &__item {
-    color: #fff;
-    font-family: Roboto-light;
+    color: $white-color;
+    font-family: $font-roboto-light;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -134,12 +134,10 @@
   background: #202020;
 
   @include mobile {
-    margin-top: 20px;
-    padding: 21px 15px;
-
-    width: 288px;
-    height: 100%;
     width: 100%;
+    margin-top: 0px;
+    padding: 21px 15px;
+    height: 100vh;
   }
 
   @include tablet {
@@ -156,7 +154,7 @@
   }
 
   .form-descr {
-    color: #fff;
+    color: $white-color;
     text-align: center;
 
     width: 349px;
@@ -183,7 +181,7 @@
     padding: 23px 30px;
     color: #434343;
 
-    font-family: Roboto-light;
+    font-family: $font-roboto-light;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -205,7 +203,7 @@
 
 ::placeholder {
   color: #434343;
-  font-family: Roboto-light;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;

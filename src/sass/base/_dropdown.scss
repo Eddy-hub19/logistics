@@ -19,9 +19,9 @@
   }
 
   .dropdown-title {
-    color: #fff;
+    color: $white-color;
     text-align: center;
-    font-family: Roboto-light;
+    font-family: $font-roboto-light;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -59,8 +59,8 @@
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #fff;
-    font-family: "Roboto-light";
+    color: $white-color;
+    font-family: $font-roboto-light;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;

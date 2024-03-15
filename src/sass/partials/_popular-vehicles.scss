@@ -42,12 +42,16 @@
         background: #ff4f28;
         display: block;
         bottom: -6px;
+        
+        @include mobile {
+          width: 100%;
+        }
       }
     }
 
     &-descr {
       color: #434343;
-      font-family: Roboto-light;
+      font-family: $font-roboto-light;
       font-size: 18px;
       font-style: normal;
       font-weight: 300;

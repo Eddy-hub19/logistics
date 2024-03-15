@@ -12,7 +12,7 @@
     flex-direction: column;
 
     .all-wrap__title {
-      color: #fff;
+      color: $white-color;
       font-family: Roboto-medium;
       font-size: 18px;
       font-style: normal;
@@ -42,8 +42,8 @@
 }
 
 .transport-services-sub {
-  color: #fff;
-  font-family: Roboto-light;
+  color: $white-color;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -53,24 +53,4 @@
 
 .services-gallery-wrap {
   position: relative;
-}
-
-.gallery-1 {
-  width: 469px;
-  height: 312px;
-  object-fit: cover;
-}
-
-.gallery-2 {
-  width: 429px;
-  height: 286px;
-  object-fit: cover;
-}
-
-.gallery-3 {
-  width: 531px;
-  height: 451px;
-  object-fit: cover;
-  border-right: 10px solid #ff4f28;
-  border-bottom: 10px solid #ff4f28;
 }

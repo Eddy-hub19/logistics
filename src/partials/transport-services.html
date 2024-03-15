@@ -37,13 +37,15 @@
 
     <div class="transport-services-gallery">
       <div class="services-gallery-wrap">
-        <img class="gallery-1" src="./images/transport-services/transport-services1.png" alt="transport-services">
-      </div>
-      <div class="services-gallery-wrap">
-        <img class="gallery-2" src="./images/transport-services/transport-services2.png" alt="transport-services">
-      </div>
-      <div class="services-gallery-wrap">
-        <img class="gallery-3" src="./images/transport-services/transport-services3.png" alt="transport-services">
+        <picture>
+
+          <source media="(max-width: 767px)" srcset="./images/transport-services-mobile.png">
+
+          <source media="(min-width: 768px)" srcset="./images/transport-services.png">
+
+          <img class="services-gallery" src="./images/transport-services.png" alt="transport-services">
+        </picture>
+
       </div>
     </div>
 
