@@ -1,25 +1,46 @@
 document.addEventListener('DOMContentLoaded', function () {
   const isMobileOrTablet = window.innerWidth <= 1024;
   if (isMobileOrTablet) {
-    const swiper = new Swiper('.swiper-container', {
+    const swiper1 = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       spaceBetween: 20,
       pagination: {
-        el: '.swiper-pagination', // Вказуємо контейнер для пагінації
-        clickable: true, // Робимо кружечки клікабельними
+        el: '.swiper-pagination',
+        clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next', // Вказуємо контейнер для стрілки "Вперед"
-        prevEl: '.swiper-button-prev', // Вказуємо контейнер для стрілки "Назад"
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        // Налаштування для мобільних пристроїв
         732: {
-          slidesPerView: 2, // Показувати 2 слайди
+          slidesPerView: 2,
           spaceBetween: 20,
         },
       },
-      // Додаткові налаштування, якщо потрібно
+    });
+
+    const swiper = new Swiper('.swiper-container2', {
+      slidesPerView: 'auto', // розділити на слайди
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+      },
+      breakpoints: {
+        732: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
     });
   }
 });

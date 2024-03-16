@@ -2,6 +2,18 @@
   background: #191919;
   padding-top: 50px;
   padding-bottom: 54px;
+
+  .nav {
+    display: flex;
+  }
+
+  .lang {
+    @include mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .footer-main {
@@ -10,24 +22,69 @@
   align-items: flex-start;
 
   @include mobile {
+    position: relative;
+    flex-direction: column;
+  }
+
+  @include tablet {
     flex-direction: column;
   }
 }
 
 .footer-logo-wrap {
   margin-right: 42px;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .footer-info {
+  @include tablet {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 0;
+    display: flex;
+  }
+
   .nav-info {
     flex-direction: column;
     align-items: flex-end;
     height: 100%;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    @include tablet {
+      flex-direction: row-reverse;
+      align-items: baseline;
+    }
   }
 
   .phone-popup,
   .phone-info {
     margin-bottom: 27px;
+  }
+
+  .phone-info .phone-number {
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .phone-popup {
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }
 
@@ -68,4 +125,8 @@
   font-style: normal;
   font-weight: 300;
   line-height: 1.35;
+
+  @include mobile {
+    margin-top: 15px;
+  }
 }

@@ -127,7 +127,7 @@
 
 .form {
   width: 418px;
-  // height: 552px;
+  height: 552px;
   flex-shrink: 0;
   padding-top: 51px;
   padding: 51px 35px;
@@ -135,9 +135,10 @@
 
   @include mobile {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 21px 15px;
-    height: 100vh;
+    height: 444px;
+    margin-bottom: 30px;
   }
 
   @include tablet {

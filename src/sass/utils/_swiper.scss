@@ -4,6 +4,37 @@
   height: 100%;
   position: relative;
   overflow-x: hidden;
+
+  justify-content: center;
+}
+
+.swiper-container2 {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.swiper-pagination2 {
+  text-align: center;
+  stroke-width: 1px;
+  stroke: #f0f0f0;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  stroke-width: 1px !important;
+  stroke: #f0f0f0 !important;
+  background: #f0f0f0 !important;
+  width: 11px !important;
+  height: 11px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #f0f0f0 !important;
+  width: 11px !important;
+  height: 11px !important;
 }
 
 .swiper-button-prev,
@@ -13,12 +44,26 @@
   }
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: #ff4f28;
+.swiper-button-prev2 {
+  position: absolute;
+  left: 20%;
+}
+.swiper-button-next2 {
+  position: absolute;
+  right: 20%;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #434343;
+.swiper-button-prev2,
+.swiper-button-next2 {
+  cursor: pointer;
+  @include desktop {
+    display: none;
+  }
+}
+
+.swiper-btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
