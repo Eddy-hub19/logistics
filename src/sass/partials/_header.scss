@@ -146,10 +146,19 @@
   gap: 14px;
   padding: 16px 21px 16px 32px;
 
+  @include mobile {
+    color: $secondary-color;
+  }
+
   &:hover {
     border-radius: 100px;
     border: 2px solid $color-accent;
     background: linear-gradient(142deg, $color-accent 71.63%, #ffa490 80.08%, $color-accent 90.75%);
+
+    @include mobile {
+      background: linear-gradient(142deg, $color-accent 71.63%, #ffa490 80.08%, $color-accent 90.75%);
+      color: white;
+    }
   }
 
   &:active {

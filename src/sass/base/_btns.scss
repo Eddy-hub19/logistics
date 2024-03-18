@@ -25,7 +25,7 @@
 
   &:active svg {
     color: $color-accent;
-    background-color: white;
+    background-color: $white-color;
     border-radius: 50%;
   }
 
@@ -48,5 +48,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  @include mobile {
+    font-size: 16px;
   }
 }

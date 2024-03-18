@@ -30,7 +30,7 @@
 
 .our-fleet-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 49px;
@@ -138,7 +138,8 @@
   flex-shrink: 0;
 
   @include mobile {
-    width: auto;
+    width: 100%;
+    margin: 30px 0 60px 0;
   }
 }
 

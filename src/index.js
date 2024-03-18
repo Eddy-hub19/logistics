@@ -11,11 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
   langLinks.forEach(function (link) {
     link.addEventListener('click', function (event) {
       event.preventDefault();
-      const selectedLang = link.classList[0]; // Получаем класс выбранного языка
       langLinks.forEach(function (el) {
-        el.classList.remove('current'); // Удаляем класс 'current' у всех ссылок
+        el.classList.remove('current'); // Remove the 'current' class from all links
       });
-      link.classList.add('current'); // Добавляем класс 'current' к выбранной ссылке
+      link.classList.add('current'); // Add the 'current' class to the selected link
     });
   });
 });

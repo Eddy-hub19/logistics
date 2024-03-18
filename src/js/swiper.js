@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const isMobileOrTablet = window.innerWidth <= 1024;
+  const isMobileOrTablet = window.innerWidth <= 1440;
   if (isMobileOrTablet) {
     const swiper1 = new Swiper('.swiper-container', {
       slidesPerView: 'auto',

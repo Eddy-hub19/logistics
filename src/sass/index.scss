@@ -1,7 +1,7 @@
 // utils
+@import "./utils/variables";
 @import "./utils/reviews";
 @import "./utils/common";
-@import "./utils/variables";
 @import "./utils/swiper";
 
 // base
@@ -33,7 +33,6 @@
 @import "./partials/page/key-benefits";
 @import "./partials/page/customer-perks";
 
-
 .list {
   display: flex;
   padding-left: 27px;
@@ -43,33 +42,45 @@
   }
 
   .item {
-    position: relative;
-    &:before {
-      content: url("../images/down-why-choose.png");
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      left: -27px;
-      top: 0px;
-      width: 17px;
+    color: $white-color;
+    font-family: $font-roboto-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.35;
+
+    @include mobile {
+      width: auto;
+      font-size: 15px;
+    }
+    @include tablet {
+      width: auto;
+      font-size: 17px;
     }
   }
 }
 
-.item {
-  // color: white;
-  font-family: $font-roboto-light;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.35;
+.-black {
+  color: $secondary-color !important;
+}
 
-  @include mobile {
-    width: auto;
-  }
-  @include tablet {
-    width: auto;
+.item {
+  position: relative;
+
+  &:before {
+    content: url("../images/down-why-choose.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -27px;
+    top: 0px;
+    width: 17px;
+
+    @include mobile {
+      width: 11px;
+      left: -20px;
+    }
   }
 }
 
@@ -84,9 +95,13 @@ img {
 
 .descr {
   color: $secondary-color;
-  font-family: Roboto-light;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 1.35;
+
+  @include mobile {
+    font-size: 15px;
+  }
 }

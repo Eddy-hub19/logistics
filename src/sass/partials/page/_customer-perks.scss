@@ -3,9 +3,11 @@
   padding-bottom: 120px;
 }
 
-.customer-perks{
+.customer-perks-list{
   display: flex;
   flex-direction: column;
+  justify-self: unset;
+  justify-content: center;
   align-items: center;
   .item {
     color: #434343;
