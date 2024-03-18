@@ -45,7 +45,7 @@
 }
 
 .hamburger-menu ul li a {
-  color: #434343;
+  color: $secondary-color;
   font-family: $font-roboto-light;
   font-size: 15px;
   font-style: normal;
@@ -53,7 +53,7 @@
   line-height: 1.35;
 
   &:hover {
-    color: #ff4f28;
+    color: $color-accent;
   }
 }
 

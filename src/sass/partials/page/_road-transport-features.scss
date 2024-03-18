@@ -1,0 +1,12 @@
+.road-transport-features{
+  padding: 91px 0 91px 0;
+}
+
+.road-transport-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .item {
+    color: #434343;
+  }
+}

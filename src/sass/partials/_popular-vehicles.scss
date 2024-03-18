@@ -1,7 +1,7 @@
 .popular-vehicles {
   padding-top: 111px;
   padding-bottom: 120px;
-  background: #191919;
+  background: $primary-color;
 
   @include mobile {
     padding-top: 31px;
@@ -41,11 +41,11 @@
     min-height: 167px;
     height: auto;
     flex-shrink: 0;
-    background: #fff;
+    background: $white-color;
     padding: 30px 30px;
 
     &-title {
-      color: #434343;
+      color: $secondary-color;
       font-family: Roboto-medium;
       font-size: 18px;
       font-style: normal;
@@ -66,7 +66,7 @@
         width: 263px;
         height: 3px;
         flex-shrink: 0;
-        background: #ff4f28;
+        background: $color-accent;
         display: block;
         bottom: -6px;
 
@@ -78,7 +78,7 @@
     }
 
     &-descr {
-      color: #434343;
+      color: $secondary-color;
       font-family: $font-roboto-light;
       font-size: 18px;
       font-style: normal;
@@ -91,8 +91,8 @@
     }
 
     &:last-child {
-      border-right: 10px solid #ff4f28;
-      border-bottom: 10px solid #ff4f28;
+      border-right: 10px solid $color-accent;
+      border-bottom: 10px solid $color-accent;
 
       @include mobile {
         border-width: 5px;

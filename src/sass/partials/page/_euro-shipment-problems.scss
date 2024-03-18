@@ -1,0 +1,13 @@
+.euro-shipment-problems {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.euro-shipment-problems-list {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    color: #434343;
+  }
+}

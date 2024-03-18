@@ -7,7 +7,7 @@
   }
 
   .item {
-    color: #434343;
+    color: $secondary-color;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .pricing-factors-container {
-  color: #434343;
+  color: $secondary-color;
   font-family: Roboto-medium;
   font-size: 18px;
   font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 .pricing-factors-descr {
-  color: #434343;
+  color: $secondary-color;
   font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
@@ -69,7 +69,7 @@
 }
 
 .pricing-factors-down {
-  color: #434343;
+  color: $secondary-color;
   font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;

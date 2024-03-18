@@ -8,11 +8,11 @@
 }
 
 .cargo-features-container {
-  border: 2px solid #ff4f28;
+  border: 2px solid $color-accent;
   padding: 40px 25px;
 
   .cargo-features-descr {
-    color: #434343;
+    color: $secondary-color;
 
     font-family: $font-roboto-light;
     font-size: 18px;

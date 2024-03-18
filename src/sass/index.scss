@@ -1,7 +1,7 @@
 // utils
-@import "./utils/variables";
 @import "./utils/reviews";
 @import "./utils/common";
+@import "./utils/variables";
 @import "./utils/swiper";
 
 // base
@@ -20,8 +20,18 @@
 @import "./partials/pricing-factors";
 @import "./partials/popular-vehicles";
 @import "./partials/cargo-features";
+@import "./partials/work-areas";
 @import "./partials/footer";
 
+// page
+@import "./partials/page/europe-freight-transport";
+@import "./partials/page/best-europe-transport";
+@import "./partials/page/road-transport-features";
+@import "./partials/page/eu-freight-pricing";
+@import "./partials/page/eu-cargo-trends";
+@import "./partials/page/euro-shipment-problems";
+@import "./partials/page/key-benefits";
+@import "./partials/page/customer-perks";
 
 
 .list {
@@ -35,7 +45,7 @@
   .item {
     position: relative;
     &:before {
-      content: url('../images/down-why-choose.png');
+      content: url("../images/down-why-choose.png");
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,7 +58,7 @@
 }
 
 .item {
-  color: white;
+  // color: white;
   font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;
@@ -64,10 +74,19 @@
 }
 
 .highlighted-text {
-  color: #ff4f28;
+  color: $color-accent;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.descr {
+  color: $secondary-color;
+  font-family: Roboto-light;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.35;
 }

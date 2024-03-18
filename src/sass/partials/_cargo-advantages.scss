@@ -7,7 +7,7 @@
     flex-direction: column;
 
     &__subtitle {
-      color: #434343;
+      color: $secondary-color;
       font-family: Roboto-medium;
       font-size: 18px;
       margin-bottom: 20px;
@@ -29,7 +29,7 @@
   }
 
   .item {
-    color: #434343;
+    color: $secondary-color;
   }
 }
 
@@ -85,7 +85,7 @@
 }
 
 .flex-right-subtitle {
-  color: #434343;
+  color: $secondary-color;
   font-family: $font-roboto-light;
   font-size: 18px;
   font-style: normal;

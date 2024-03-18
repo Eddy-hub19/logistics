@@ -46,9 +46,9 @@
   left: 0;
   border-radius: 20px;
   background: #3e3e3e;
-  width: 416px;
-  height: 748px;
-  max-height: 748px;
+  min-width: 416px;
+  min-height: 748px;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0px;
@@ -68,7 +68,7 @@
 
     &:focus,
     &:hover {
-      color: #ff4f28;
+      color: $color-accent;
     }
   }
 }

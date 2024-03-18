@@ -1,5 +1,5 @@
 .header {
-  background: #191919;
+  background: $primary-color;
   position: fixed;
   top: 0;
   z-index: 99999;
@@ -7,7 +7,7 @@
 }
 
 .header-content {
-  background: #191919;
+  background: $primary-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@
   &__title,
   &__subtitle {
     color: $white-color;
-    font-family: "GetVoIP Grotesque";
+    font-family: $font-getvoip;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -133,7 +133,7 @@
   height: 56px;
   flex-shrink: 0;
   border-radius: 100px;
-  border: 2px solid #ff4f28;
+  border: 2px solid $color-accent;
 
   color: $white-color;
 
@@ -148,8 +148,8 @@
 
   &:hover {
     border-radius: 100px;
-    border: 2px solid #ff4f28;
-    background: linear-gradient(142deg, #ff4f28 71.63%, #ffa490 80.08%, #ff4f28 90.75%);
+    border: 2px solid $color-accent;
+    background: linear-gradient(142deg, $color-accent 71.63%, #ffa490 80.08%, $color-accent 90.75%);
   }
 
   &:active {
@@ -234,5 +234,5 @@
 }
 
 .current {
-  background: #ff4f28;
+  background: $color-accent;
 }

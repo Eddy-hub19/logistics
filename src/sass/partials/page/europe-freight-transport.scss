@@ -1,0 +1,17 @@
+.europe-freight-transport {
+  padding-top: 91px;
+  padding-bottom: 91px;
+  margin-top: 100px;
+  // margin-bottom: 150px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1380px;
+    height: 9px;
+    flex-shrink: 0;
+    background: $color-accent;
+  }
+}
