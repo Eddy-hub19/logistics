@@ -93,6 +93,33 @@ img {
   display: block;
 }
 
+.title {
+  // color: $secondary-color;
+  font-family: $font-getvoip;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+.title-medium {
+  color: #434343;
+  font-family: $font-roboto-medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
 .descr {
   color: $secondary-color;
   font-family: $font-roboto-light;

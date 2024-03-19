@@ -36,7 +36,7 @@
 
 .pricing-factors-container {
   color: $secondary-color;
-  font-family: Roboto-medium;
+  font-family: $font-roboto-medium;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -50,15 +50,6 @@
   @include mobile {
     flex-direction: column;
   }
-}
-
-.pricing-factors-descr {
-  color: $secondary-color;
-  font-family: $font-roboto-light;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.35;
 }
 
 .pricing-factors-list {
@@ -75,12 +66,5 @@
 }
 
 .pricing-factors-down {
-  color: $secondary-color;
-  font-family: $font-roboto-light;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.35;
   margin-top: 26px;
-  margin-bottom: 20px;
 }

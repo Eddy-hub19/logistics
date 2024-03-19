@@ -1,15 +1,24 @@
 .eu-freight-pricing {
   padding-top: 91px;
   padding-bottom: 91px;
+
+  @include mobile {
+    padding: 60px 0 30px 0;
+  }
 }
 
 .eu-freight-pricing-list {
   gap: 30px;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   .item {
     padding: 20px 25px;
   }
-  .item__descr{
+  .item__descr {
     color: $white-color;
   }
 }

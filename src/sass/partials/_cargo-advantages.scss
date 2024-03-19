@@ -18,7 +18,7 @@
 
     &__subtitle {
       color: $secondary-color;
-      font-family: Roboto-medium;
+      font-family: $font-roboto-medium;
       font-size: 18px;
       margin-bottom: 20px;
 
@@ -96,12 +96,6 @@
 }
 
 .flex-right-subtitle {
-  color: $secondary-color;
-  font-family: $font-roboto-light;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.35;
   margin-top: 25px;
 
   @include mobile {

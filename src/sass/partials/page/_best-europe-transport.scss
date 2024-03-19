@@ -1,6 +1,29 @@
-.best-europe-transport-list{
+.best-europe-transport {
+  padding-top: 91px;
+  padding-bottom: 91px;
+
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+.mg-top39 {
+  margin-top: 39px;
+}
+
+.mg-top30{
+  margin-top: 30px;
+}
+
+.best-europe-transport-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: space-evenly;
+  margin-top: 20px;
+
+  @include mobile {
+    gap: 15px;
+  }
 }
