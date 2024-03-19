@@ -1,10 +1,39 @@
-.eu-cargo-trends{
-  padding-top: 91px;
+.eu-cargo-trends {
   padding-bottom: 91px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
 }
 
-.eu-cargo-trends-list{
+.eu-cargo-trends-list {
   margin-top: 20px;
   display: flex;
-  gap: 10px;
+  gap: 24px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .item {
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__descr {
+      color: #434343;
+      font-family: $font-roboto-light;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.35;
+    }
+  }
+}
+
+.eu-cargo-trends-image {
+  @include tablet {
+    width: 70vw;
+  }
 }

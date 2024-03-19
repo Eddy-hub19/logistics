@@ -69,6 +69,7 @@
 
   &:before {
     content: url("../images/down-why-choose.png");
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +112,24 @@ img {
   }
 }
 
+.title2 {
+  color: #434343;
+  font-family: $font-getvoip;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
 .title-medium {
   color: #434343;
   font-family: $font-roboto-medium;
@@ -118,6 +137,10 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.35;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .descr {
@@ -131,4 +154,16 @@ img {
   @include mobile {
     font-size: 15px;
   }
+}
+
+.mg-top39 {
+  margin-top: 39px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.mg-top30 {
+  margin-top: 30px;
 }

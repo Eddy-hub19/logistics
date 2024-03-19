@@ -1,22 +1,36 @@
 .road-transport-features {
-  padding: 91px 0 91px 0;
+  padding-bottom: 91px;
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
 }
 
 .road-transport-features-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 20px;
 
-  .item {
-    color: #434343;
+  @include mobile {
+    gap: 10px;
   }
 }
 
 .road-transport-features-images {
+  display: flex;
   margin-top: 30px;
   gap: 47px;
-  
+
   @include mobile {
+    flex-direction: column;
+  }
+  
+  @include tablet {
     flex-direction: column;
   }
 }
