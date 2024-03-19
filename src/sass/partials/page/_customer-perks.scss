@@ -1,15 +1,28 @@
-.customer-perks{
+.customer-perks {
   padding-top: 91px;
   padding-bottom: 120px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
+
+  @include tablet {
+    padding-top: 30px;
+  }
+
+  .btn {
+    margin: 50px auto;
+    width: 334px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
 }
 
-.customer-perks-list{
+.customer-perks-list {
   display: flex;
   flex-direction: column;
-  justify-self: unset;
-  justify-content: center;
-  align-items: center;
-  // .item {
-  //   color: #434343;
-  // }
+  gap: 15px;
+  margin-top: 20px;
 }

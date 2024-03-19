@@ -28,6 +28,7 @@
 
   @include mobile {
     flex-direction: column;
+    gap: 15px;
   }
 
   @include tablet {
@@ -69,12 +70,20 @@
       font-weight: 300;
       line-height: 1.35;
 
+      @include mobile {
+        font-size: 15px;
+      }
+
       b {
         font-family: Roboto-medium;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.35;
+
+        @include mobile {
+          font-size: 16px;
+        }
       }
     }
   }

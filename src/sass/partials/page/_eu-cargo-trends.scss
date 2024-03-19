@@ -16,7 +16,6 @@
   }
 
   .item {
-
     &:not(:last-child) {
       margin-bottom: 15px;
     }
@@ -33,7 +32,24 @@
 }
 
 .eu-cargo-trends-image {
+  @include mobile {
+    display: none;
+  }
+
   @include tablet {
     width: 70vw;
   }
+}
+
+.eu-cargo-trends-image-mobile {
+  margin-top: 30px;
+
+  @include desktop {
+    display: none;
+  }
+  
+  @include tablet {
+    display: none;
+  }
+
 }

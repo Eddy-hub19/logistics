@@ -1,13 +1,14 @@
 .euro-shipment-problems {
-  padding-top: 100px;
   padding-bottom: 100px;
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
 }
 
 .euro-shipment-problems-list {
+  gap: 15px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-
-  // .item {
-  //   color: #434343;
-  // }
 }
