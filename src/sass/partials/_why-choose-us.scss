@@ -108,6 +108,10 @@
   flex-direction: column;
   gap: 20px;
 
+  @include mobile {
+    gap: 10px;
+  }
+
   &__item {
     color: $white-color;
     font-family: $font-roboto-light;
