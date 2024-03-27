@@ -65,7 +65,7 @@
   .abstraction1 {
     position: relative;
 
-    &:after {
+    &::before {
       content: "";
       width: 19px;
       height: 18px;
@@ -88,7 +88,7 @@
   .abstraction2 {
     position: relative;
 
-    &:after {
+    &::before {
       content: "";
       clip-path: inset(24% 23% 46% 26%);
       border-top: 30px solid $color-accent;
