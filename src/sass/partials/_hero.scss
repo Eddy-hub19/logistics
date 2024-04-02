@@ -5,9 +5,9 @@
   height: calc(100vh - 106px);
   color: $white-color;
 
-  @include desktop {
-    margin-top: 106px;
-  }
+  // @include desktop {
+  //   margin-top: 106px;
+  // }
 
   @include mobile {
     height: 100%;

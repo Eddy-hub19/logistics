@@ -23,15 +23,22 @@
 @import "./partials/work-areas";
 @import "./partials/footer";
 
-// page
-@import "./partials/page/europe-freight-transport";
-@import "./partials/page/best-europe-transport";
-@import "./partials/page/road-transport-features";
-@import "./partials/page/eu-freight-pricing";
-@import "./partials/page/eu-cargo-trends";
-@import "./partials/page/euro-shipment-problems";
-@import "./partials/page/key-benefits";
-@import "./partials/page/customer-perks";
+// mizhnarodni-vantazhni-perevezennya
+@import "./partials/mizhnarodni-vantazhni-perevezennya/europe-freight-transport";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/best-europe-transport";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/road-transport-features";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/eu-freight-pricing";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/eu-cargo-trends";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/euro-shipment-problems";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/key-benefits";
+@import "./partials/mizhnarodni-vantazhni-perevezennya/customer-perks";
+
+// ukrainian-freight-transportation
+@import "./partials/ukrainian-freight-transportation/ukrainian-freight-transportation";
+@import "./partials/ukrainian-freight-transportation/cost-factors";
+@import "./partials/ukrainian-freight-transportation/delivery-speed-factors";
+@import "./partials/ukrainian-freight-transportation/xxl-logistics-advantages";
+
 
 .list {
   display: flex;
@@ -95,7 +102,6 @@ img {
 }
 
 .title {
-  // color: $secondary-color;
   font-family: $font-getvoip;
   font-size: 60px;
   font-style: normal;
@@ -170,4 +176,8 @@ img {
   @include mobile {
     margin-top: 20px;
   }
+}
+
+.main-margin {
+  margin-top: 106px;
 }

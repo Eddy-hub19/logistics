@@ -20,7 +20,7 @@
 
         <div class="dropdown-content" id="dropdownContent">
           <a href="././page.html">Вантажні перевезення по Україні</a>
-          <a href="#">Міжнародні вантажні перевезення (Європа)</a>
+          <a href="././mizhnarodni-vantazhni-perevezennya.html">Міжнародні вантажні перевезення (Європа)</a>
           <a href="#">Перевезення негабаритних вантажів</a>
           <a href="#">Перевезення великогабаритних вантажів</a>
           <a href="#">Перевезення спецтехніки</a>
@@ -48,7 +48,7 @@
       </div>
 
       <div class="phone-popup info-spacing">
-        <a class="phone-popup-title" href="#form">Передзвоніть мені</a>
+        <a class="phone-popup-title" href="./#form">Передзвоніть мені</a>
         <img src="./images/phone-popup.svg" alt="#">
       </div>
 
@@ -191,3 +191,54 @@
   </div>
 
 </header>
+
+<!-- <script>
+  // Находим все ссылки в меню
+  const menuLinks = document.querySelectorAll('.dropdown-content a');
+
+  // Перебираем ссылки и добавляем обработчик события клика
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+
+      // event.preventDefault();
+      // Получаем текст ссылки, на которую кликнули
+      const newTitle = this.textContent;
+      
+      const dropdownContent = document.querySelector('#dropdownContent')
+      console.log(dropdownContent.innerText)
+      
+      // Находим заголовок меню и изменяем его текст
+      const dropdownTitle = document.querySelector('.dropdown-title');
+      dropdownTitle.textContent = 'Головна'
+      dropdownTitle.textContent = newTitle;
+      
+      // // Получаем URL ссылки, на которую кликнули
+      const url = this.getAttribute('href');
+      
+      // Обновляем заголовок страницы
+      document.title = newTitle;
+      
+      // // Обновляем URL в адресной строке браузера
+      window.history.pushState({}, '', url);
+    });
+  });
+</script>
+ -->
+
+
+ <script>
+  // Получаем элементы, с которыми будем работать
+  const dropdownTitle = document.querySelector('.dropdown-title');
+  const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+
+  // Добавляем обработчик события на каждую ссылку
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Предотвращаем переход по ссылке по умолчанию
+      dropdownTitle.textContent = this.textContent; // Изменяем текст заголовка на текст ссылки
+      setTimeout(() => {
+        window.location.href = this.href; // Переходим по ссылке после изменения текста заголовка
+      }, 300); // Добавляем небольшую задержку, чтобы пользователь увидел изменение текста
+    });
+  });
+</script>

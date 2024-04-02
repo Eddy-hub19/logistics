@@ -1,0 +1,9 @@
+<!-- <?php include ('./partials/home/header.html') ?> -->
+    <!-- <?php include ('./partials/home/hero.html') ?>
+    <?php include ('./partials/home/our-fleet.html') ?>
+    <?php include ('./partials/home/why-choose-us.html') ?>
+    <?php include ('./partials/home/transport-services.html') ?>
+    <?php include ('./partials/home/pricing-factors.html') ?>
+    <?php include ('./partials/home/popular-vehicles.html') ?>
+    <?php include ('./partials/home/cargo-features.html') ?> -->
+<!-- <?php include ('./partials/home/footer.html') ?> -->

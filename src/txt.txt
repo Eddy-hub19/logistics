@@ -1,14 +1,3 @@
-1. header ✅
-2. hero ✅
-4. our-fleet ✅
-5. why-choose-us ✅
-6. cargo-advantages ✅
-7. transport-services ✅
-8. pricing-factors ✅
-9. popular-vehicles ✅
-10. cargo-features ✅
-
-
 Шрифт Desktop
 H1 - Getvoip grotesque, 60px, regular  
 H2 - Getvoip grotesque, 40px, regular  
