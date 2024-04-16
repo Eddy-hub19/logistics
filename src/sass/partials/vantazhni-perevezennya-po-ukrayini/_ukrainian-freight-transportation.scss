@@ -1,9 +1,9 @@
-.europe-freight-transport {
+.ukrainian-freight-transportation {
   @include section-padding;
+  padding-bottom: 91px;
 
   @include mobile {
     padding-top: 30px;
-    margin-top: 76px;
   }
 }
 
@@ -26,13 +26,5 @@
       height: 5px;
       margin-top: 10px;
     }
-  }
-}
-
-.wrap-transport-down {
-  margin-top: 78px;
-
-  @include mobile {
-    margin-top: 36px;
   }
 }

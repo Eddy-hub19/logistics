@@ -11,17 +11,25 @@
 @import "./base/dropdown";
 
 // partials
-@import "./partials/header";
-@import "./partials/hero";
-@import "./partials/our-fleet";
-@import "./partials/why-choose-us";
-@import "./partials/cargo-advantages";
-@import "./partials/transport-services.scss";
-@import "./partials/pricing-factors";
-@import "./partials/popular-vehicles";
-@import "./partials/cargo-features";
-@import "./partials/work-areas";
-@import "./partials/footer";
+@import "./partials/home/header";
+@import "./partials/home/hero";
+@import "./partials/home/our-fleet";
+@import "./partials/home/why-choose-us";
+@import "./partials/home/cargo-advantages";
+@import "./partials/home/transport-services.scss";
+@import "./partials/home/pricing-factors";
+@import "./partials/home/popular-vehicles";
+@import "./partials/home/cargo-features";
+@import "./partials/home/work-areas";
+@import "./partials/home/footer";
+
+// vantazhni-perevezennya-po-ukrayini
+@import "./partials/vantazhni-perevezennya-po-ukrayini/ukrainian-freight-transportation";
+@import "./partials/vantazhni-perevezennya-po-ukrayini/cost-factors";
+@import "./partials/vantazhni-perevezennya-po-ukrayini/delivery-speed-factors";
+@import "./partials/vantazhni-perevezennya-po-ukrayini/transport-options-ukraine";
+@import "./partials/vantazhni-perevezennya-po-ukrayini/xxl-logistics-advantages";
+@import "./partials/vantazhni-perevezennya-po-ukrayini/key-benefits";
 
 // mizhnarodni-vantazhni-perevezennya
 @import "./partials/mizhnarodni-vantazhni-perevezennya/europe-freight-transport";
@@ -33,12 +41,9 @@
 @import "./partials/mizhnarodni-vantazhni-perevezennya/key-benefits";
 @import "./partials/mizhnarodni-vantazhni-perevezennya/customer-perks";
 
-// ukrainian-freight-transportation
-@import "./partials/ukrainian-freight-transportation/ukrainian-freight-transportation";
-@import "./partials/ukrainian-freight-transportation/cost-factors";
-@import "./partials/ukrainian-freight-transportation/delivery-speed-factors";
-@import "./partials/ukrainian-freight-transportation/xxl-logistics-advantages";
-
+// perevezennya-negabaritnih-vantazhiv
+@import "./partials/perevezennya-negabaritnih-vantazhiv/oversized-cargo-transport";
+@import "./partials/perevezennya-negabaritnih-vantazhiv/oversized-transport-process";
 
 .list {
   display: flex;
@@ -67,7 +72,7 @@
   }
 }
 
-.-black {
+.black {
   color: $secondary-color !important;
 }
 
@@ -162,6 +167,10 @@ img {
   }
 }
 
+.gap15{
+  gap: 15px;
+}
+
 .mg-top39 {
   margin-top: 39px;
 
@@ -178,6 +187,35 @@ img {
   }
 }
 
+.mg-top78 {
+  margin-top: 78px;
+
+  @include mobile {
+    margin-top: 36px;
+  }
+}
+
+.mg-btm20{
+  margin-bottom: 20px;
+}
+
 .main-margin {
   margin-top: 106px;
+
+  @include mobile {
+    margin-top: 76px;
+  }
+
+  @include tablet {
+    margin-top: 159px;
+  }
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.section-top91{
+  padding-top: 91px;
 }

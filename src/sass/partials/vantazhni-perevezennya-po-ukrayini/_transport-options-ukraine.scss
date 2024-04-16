@@ -1,0 +1,15 @@
+.transport-options-ukraine-list {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.transport-options-wrap {
+  padding: 15px 20px;
+  background: #f0f0f0;
+  width: 406px;
+  min-height: 246px;
+
+  @include mobile{
+    width: 100%;
+  }
+}

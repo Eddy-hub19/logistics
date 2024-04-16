@@ -42,5 +42,27 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     });
+    const swiper3 = new Swiper('.swiper-container3', {
+      slidesPerView: 'auto', // розділити на слайди
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+      },
+      breakpoints: {
+        732: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    });
   }
 });

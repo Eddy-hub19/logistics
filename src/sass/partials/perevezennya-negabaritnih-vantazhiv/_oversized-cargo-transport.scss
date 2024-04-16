@@ -1,0 +1,45 @@
+.oversized-cargo-transport {
+  @include section-padding;
+  padding-bottom: 91px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
+}
+
+.oversized-cargo-transport-list {
+  display: flex;
+  gap: 49px;
+  margin-top: 20px;
+  padding-left: 0px !important;
+
+  @include mobile {
+    gap: 10px;
+  }
+
+  &__item {
+    // width: calc(100% / 3 - 49px);
+    width: 407px;
+    background: #f0f0f0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include mobile {
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 31px;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+}

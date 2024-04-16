@@ -1,0 +1,39 @@
+.oversized-transport-process {
+  padding-bottom: 91px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
+
+  .flex-left-list {
+    margin-bottom: 67px;
+  }
+
+  .flex-right {
+    margin-top: 50px;
+  }
+
+  .flex-right-list {
+    margin-top: 54px;
+    max-width: 683px;
+
+    .item {
+      margin-left: 30px;
+    }
+  }
+
+  .flex-right-subtitle {
+    margin-top: 37px;
+  }
+}
+
+// non
+
+.container-wrap {
+  display: flex;
+  margin-top: 52px;
+}
+
+.max-width {
+  max-width: 684px;
+}
