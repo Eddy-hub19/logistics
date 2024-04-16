@@ -18,8 +18,8 @@
   }
 
   &__item {
-    // width: calc(100% / 3 - 49px);
-    width: 407px;
+    width: calc(100% / 3 - 49px);
+    // max-width: 407px;
     background: #f0f0f0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -33,6 +33,12 @@
       justify-content: flex-start;
       padding-left: 31px;
     }
+
+    @include tablet {
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 31px;
+    }
   }
 
   @include mobile {
@@ -41,5 +47,11 @@
 
   &__img {
     margin-right: 10px;
+  }
+}
+
+.unique-selling-points {
+  .btn {
+    margin: 50px auto 0px;
   }
 }

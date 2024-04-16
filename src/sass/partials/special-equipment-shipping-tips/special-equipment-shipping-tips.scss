@@ -1,0 +1,32 @@
+.special-equipment-shipping-tips {
+  @include section-padding;
+
+  @include mobile {
+    padding-top: 30px;
+    margin-top: 76px;
+  }
+
+  .descr {
+    margin-top: 78px;
+    @include mobile{
+      margin-top: 36px;
+    }
+  }
+}
+
+.transport-types-for-special-equipment {
+  .our-fleet-list__wrap-descr {
+    width: 264px;
+  }
+}
+
+
+.why-choose-us-special-equipment-wrap{
+  @include mobile {
+    flex-direction: column;
+
+    img {
+      margin-top: 20px;
+    }
+  }
+}

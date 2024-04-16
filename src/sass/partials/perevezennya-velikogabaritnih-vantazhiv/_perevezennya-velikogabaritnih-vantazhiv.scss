@@ -1,0 +1,37 @@
+.transport-challenges {
+  .btn {
+    margin: 50px auto 0px;
+  }
+}
+
+.transport-challenges-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .descr {
+    margin-top: 50px;
+    margin-left: -30px;
+  }
+}
+
+.large-cargo-transportation {
+  .list {
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+.large-cargo-transportation-process {
+  margin-bottom: 100px;
+}

@@ -1,9 +1,10 @@
 .ukrainian-freight-transportation {
   @include section-padding;
-  padding-bottom: 91px;
+  // padding-bottom: 91px;
 
   @include mobile {
     padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 

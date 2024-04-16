@@ -1,6 +1,19 @@
 .transport-options-ukraine-list {
   align-items: baseline;
   justify-content: space-between;
+
+  // @include mobile {
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  .our-fleet-list__item-img {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .transport-options-wrap {
@@ -9,7 +22,7 @@
   width: 406px;
   min-height: 246px;
 
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
 }

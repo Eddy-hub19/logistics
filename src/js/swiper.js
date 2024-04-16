@@ -42,20 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     });
+    
     const swiper3 = new Swiper('.swiper-container3', {
       slidesPerView: 'auto', // розділити на слайди
       spaceBetween: 20,
       pagination: {
-        el: '.swiper-pagination2',
+        el: '.swiper-pagination3',
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next2',
-        prevEl: '.swiper-button-prev2',
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3',
       },
       breakpoints: {
         732: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         768: {

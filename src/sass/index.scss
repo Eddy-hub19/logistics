@@ -45,6 +45,12 @@
 @import "./partials/perevezennya-negabaritnih-vantazhiv/oversized-cargo-transport";
 @import "./partials/perevezennya-negabaritnih-vantazhiv/oversized-transport-process";
 
+// perevezennya-velikogabaritnih-vantazhiv
+@import "./partials/perevezennya-velikogabaritnih-vantazhiv/perevezennya-velikogabaritnih-vantazhiv";
+
+// perevezennya-spectehniki-sho-neobhidno-znati 
+@import "./partials/special-equipment-shipping-tips/special-equipment-shipping-tips.scss";
+
 .list {
   display: flex;
   padding-left: 27px;
@@ -218,4 +224,12 @@ img {
 
 .section-top91{
   padding-top: 91px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
+
+  @include tablet {
+    padding-top: 60px;
+  }
 }

@@ -1,5 +1,9 @@
 .cost-factors{
   padding-bottom: 91px;
+
+  @include mobile{
+    padding-top: 60px;
+  }
 }
 
 .cost-factors-list{
