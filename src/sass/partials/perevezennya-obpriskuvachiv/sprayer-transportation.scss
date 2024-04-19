@@ -1,0 +1,41 @@
+.sprayer-transportation {
+  @include section-padding;
+  margin-bottom: 100px;
+}
+
+.bg-item {
+  display: flex;
+  padding: 20px 36px 20px 57px;
+  height: 88px;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.sprayer-transport-tips {
+  margin-bottom: 100px;
+}
+
+.sprayer-transport-benefits {
+  margin-bottom: 100px;
+
+  .list {
+    padding-left: 0px;
+  }
+}
+
+.sprayer-transport-booking {
+  margin-bottom: 100px;
+  .wrap {
+    flex-direction: column;
+    width: 627px;
+  }
+}
+
+.sprayer-transport-booking-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+  .wrap img {
+    margin-top: 31px;
+  }
+}

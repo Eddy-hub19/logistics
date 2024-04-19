@@ -1,0 +1,26 @@
+.excavator-transportation {
+  @include section-padding;
+}
+
+.excavator-transportation-methods {
+  margin-bottom: 100px;
+}
+
+.xxl-logistics-excavator-transportation {
+  margin-bottom: 100px;
+}
+
+.select-us-reasons{
+  margin-bottom: 100px;
+}
+
+.select-us-reasons-wrap {
+  height: 536px;
+  flex-shrink: 0;
+  background: #f0f0f0;
+  padding: 55px 132px 55px 45px;
+
+  .wrap {
+    gap: 122px;
+  }
+}

@@ -51,6 +51,20 @@
 // perevezennya-spectehniki-sho-neobhidno-znati 
 @import "./partials/special-equipment-shipping-tips/special-equipment-shipping-tips.scss";
 
+// perevezennya-spectehniki-sho-neobhidno-znati 
+@import "./partials/perevezennya-vantazhiv-tralami/perevezennya-vantazhiv-tralami.scss";
+
+// perevezennya-ekskavatoriv 
+@import "./partials/perevezennya-ekskavatoriv/excavator-transportation.scss";
+
+// perevezennya-obpriskuvachiv 
+@import "./partials/perevezennya-obpriskuvachiv/sprayer-transportation.scss";
+
+// perevezennya-budivelnogo-obladnannya
+@import "./partials/perevezennya-budivelnogo-obladnannya/construction-equipment-transportation.scss";
+
+
+
 .list {
   display: flex;
   padding-left: 27px;
@@ -232,4 +246,9 @@ img {
   @include tablet {
     padding-top: 60px;
   }
+}
+
+
+.mg-auto50{
+  margin: 50px auto 0;
 }

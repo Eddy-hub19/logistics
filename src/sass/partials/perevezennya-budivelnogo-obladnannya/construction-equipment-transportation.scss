@@ -1,0 +1,31 @@
+.construction-equipment-transportation {
+  @include section-padding;
+}
+
+.construction-equipment-transport {
+  .wrap {
+    gap: 38px;
+  }
+}
+
+.professional-equipment-delivery-benefits {
+  .bg-item {
+    padding: 32px 39px;
+  }
+
+  .professional-equipment-list {
+    padding-left: 0;
+  }
+}
+
+.professional-equipment-images {
+  gap: 49px;
+}
+
+.xxl-equipment-transport {
+  margin-bottom: 120px;
+}
+
+.xxl-equipment-transport-wrap {
+  gap: 40px;
+}
