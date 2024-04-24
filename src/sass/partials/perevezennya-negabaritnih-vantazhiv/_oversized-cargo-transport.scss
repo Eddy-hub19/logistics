@@ -3,7 +3,11 @@
   padding-bottom: 91px;
 
   @include mobile {
-    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  @include tablet {
+    padding-bottom: 60px;
   }
 }
 
@@ -15,6 +19,10 @@
 
   @include mobile {
     gap: 10px;
+  }
+
+  @include tablet {
+    gap: 20px;
   }
 
   &__item {
@@ -36,8 +44,9 @@
 
     @include tablet {
       width: 100%;
-      justify-content: flex-start;
-      padding-left: 31px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
     }
   }
 

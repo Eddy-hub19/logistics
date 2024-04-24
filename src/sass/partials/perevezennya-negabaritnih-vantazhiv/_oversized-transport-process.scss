@@ -15,7 +15,9 @@
 
   .flex-right-list {
     margin-top: 54px;
-    max-width: 683px;
+    @include desktop {
+      max-width: 683px;
+    }
 
     .item {
       margin-left: 30px !important;
@@ -26,6 +28,12 @@
     margin-top: 37px;
   }
 
+  .flex-right-wrap-images {
+    @include tablet {
+      width: 100%;
+    }
+  }
+
   .flex-right-wrap-images img {
     @include mobile {
       max-width: 100%;
@@ -34,7 +42,7 @@
   }
 }
 
-// non
+// non-standard-load
 
 .non-standard-load-wrap2 {
   margin-top: 30px;
@@ -42,6 +50,11 @@
 
 .oversized-transport-proces .flex-right-list {
   @include mobile {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  @include tablet {
     margin-left: 0;
     padding-left: 0;
   }
@@ -72,16 +85,33 @@
     height: 64px;
     flex-shrink: 0;
     margin: 50px auto 0px auto;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 
 .oversized-vehicles-list {
+  display: flex;
+  flex-direction: column;
   gap: 6px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
   &__item {
     h3 {
       border-bottom: 3px solid red;
       width: 20%;
       margin-bottom: 6px;
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
     .oversized-vehicles-descr {

@@ -30,4 +30,12 @@
 
 @mixin section-padding {
   padding-top: 71px;
+
+  @include mobile{
+    padding-top: 30px;
+  }
+
+  @include mobile{
+    padding-top: 40px;
+  }
 }

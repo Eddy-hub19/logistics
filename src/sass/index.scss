@@ -48,16 +48,16 @@
 // perevezennya-velikogabaritnih-vantazhiv
 @import "./partials/perevezennya-velikogabaritnih-vantazhiv/perevezennya-velikogabaritnih-vantazhiv";
 
-// perevezennya-spectehniki-sho-neobhidno-znati 
+// perevezennya-spectehniki-sho-neobhidno-znati
 @import "./partials/special-equipment-shipping-tips/special-equipment-shipping-tips.scss";
 
-// perevezennya-spectehniki-sho-neobhidno-znati 
+// perevezennya-spectehniki-sho-neobhidno-znati
 @import "./partials/perevezennya-vantazhiv-tralami/perevezennya-vantazhiv-tralami.scss";
 
-// perevezennya-ekskavatoriv 
+// perevezennya-ekskavatoriv
 @import "./partials/perevezennya-ekskavatoriv/excavator-transportation.scss";
 
-// perevezennya-obpriskuvachiv 
+// perevezennya-obpriskuvachiv
 @import "./partials/perevezennya-obpriskuvachiv/sprayer-transportation.scss";
 
 // perevezennya-budivelnogo-obladnannya
@@ -68,7 +68,6 @@
 
 // perevezennya-avtomobiliv
 @import "./partials/perevezennya-avtomobiliv/car-transportation.scss";
-
 
 .list {
   display: flex;
@@ -177,6 +176,10 @@ img {
   @include mobile {
     font-size: 16px;
   }
+
+  @include tablet {
+    font-size: 20px;
+  }
 }
 
 .descr {
@@ -190,10 +193,18 @@ img {
   @include mobile {
     font-size: 15px;
   }
+
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
-.gap15{
+.gap15 {
   gap: 15px;
+
+  @include mobile {
+    gap: 10px;
+  }
 }
 
 .mg-top39 {
@@ -220,7 +231,7 @@ img {
   }
 }
 
-.mg-btm20{
+.mg-btm20 {
   margin-bottom: 20px;
 }
 
@@ -236,12 +247,12 @@ img {
   }
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
 }
 
-.section-top91{
+.section-top91 {
   padding-top: 91px;
 
   @include mobile {
@@ -253,7 +264,18 @@ img {
   }
 }
 
-
-.mg-auto50{
+.mg-auto50 {
   margin: 50px auto 0;
+}
+
+.mg-btm120 {
+  margin-bottom: 120px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
 }

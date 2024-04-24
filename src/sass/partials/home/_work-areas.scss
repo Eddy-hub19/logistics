@@ -1,5 +1,4 @@
 .work-areas {
-  margin-bottom: 120px;
 
   @include mobile {
     margin-bottom: 0;
@@ -25,6 +24,10 @@
 
   @include mobile {
     padding: 15px 10px;
+  }
+
+  @include tablet {
+    padding: 40px 25px 25px;
   }
 }
 

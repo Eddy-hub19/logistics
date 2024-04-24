@@ -5,6 +5,10 @@
 .building-cargo {
   .our-fleet-list__wrap-descr {
     width: 264px;
+
+    @include mobile {
+      width: 30%;
+    }
   }
 }
 

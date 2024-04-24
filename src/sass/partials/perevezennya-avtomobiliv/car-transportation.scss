@@ -14,16 +14,31 @@
   .wrap {
     gap: 17px;
     align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 }
 
-
 // car-transport-cost
 
-.car-transport-cost{
+.car-transport-cost {
   .wrap {
     gap: 48px;
     align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
 
     .descr {
       margin-bottom: 50px;
@@ -34,5 +49,5 @@
 // professional-car-transport-benefits
 
 .professional-car-transport-benefits {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 }

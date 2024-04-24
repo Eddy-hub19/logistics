@@ -5,10 +5,20 @@
 .construction-equipment-transport {
   .wrap {
     gap: 38px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }
 
 .professional-equipment-delivery-benefits {
+  .wrap {
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
   .bg-item {
     padding: 32px 39px;
   }
@@ -28,4 +38,8 @@
 
 .xxl-equipment-transport-wrap {
   gap: 40px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }

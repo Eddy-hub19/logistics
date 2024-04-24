@@ -10,17 +10,47 @@
   margin-bottom: 100px;
 }
 
-.select-us-reasons{
-  margin-bottom: 100px;
+.excavator-info{
+  .wrap{
+    @include mobile {
+      flex-direction: column;
+    }
+    
+    @include tablet {
+      flex-direction: column;
+    }
+  }
 }
 
+.xxl-logistics-excavator-transportation{
+  .wrap {
+    flex-direction: column;
+  }
+}
+
+
 .select-us-reasons-wrap {
-  height: 536px;
   flex-shrink: 0;
   background: #f0f0f0;
   padding: 55px 132px 55px 45px;
 
+  @include mobile {
+    padding: 30px 20px;
+  }
+
+  @include tablet {
+    padding: 30px 20px;
+  }
+
   .wrap {
     gap: 122px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 }

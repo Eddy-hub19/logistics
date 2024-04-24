@@ -1,5 +1,12 @@
-// .transport-challenges {
-// }
+.large-cargo-transportation {
+  @include section-padding;
+  .list {
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
 
 .transport-challenges-wrap {
   display: flex;
@@ -20,14 +27,7 @@
   }
 }
 
-.large-cargo-transportation {
-  .list {
-    @include tablet {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-}
+
 
 .large-cargo-transportation-process {
   margin-bottom: 100px;

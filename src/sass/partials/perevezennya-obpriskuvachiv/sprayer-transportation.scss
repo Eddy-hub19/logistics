@@ -6,7 +6,7 @@
 .bg-item {
   display: flex;
   padding: 20px 36px 20px 57px;
-  height: 88px;
+  // height: 88px;
   flex-shrink: 0;
   background: #f0f0f0;
 }
@@ -28,6 +28,24 @@
   .wrap {
     flex-direction: column;
     width: 627px;
+    
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -35,6 +53,15 @@
   display: flex;
   justify-content: space-between;
   gap: 9px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
   .wrap img {
     margin-top: 31px;
   }
