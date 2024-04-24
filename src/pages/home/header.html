@@ -31,7 +31,7 @@
           <a href="/src/u-chomu-perevozyat-budivelni-materiali.html">Перевезення Будівельних матеріалів</a>
           <a href="/src/perevezennya-avtomobiliv.html">Перевезення автомобілів</a>
           <a href="/src/perevezennya-transformatoriv.html">Перевезення трансформаторів</a>
-          <a href="#">Перевезення длинномерами</a>
+          <a href="/src/perevezennya-dovgomirami.html">Перевезення длинномерами</a>
           <a href="#">Перевезення сипучих вантажів</a>
           <a href="#">Перевезення рідких вантажів</a>
           <a href="#">Контейнерні перевезення</a>
@@ -135,19 +135,19 @@
     <!-- Hamnurger-menu  -->
     <div class="mobile-menu hamburger-menu">
       <ul class="mobile-menu-list">
-        <li><a href="#">Вантажні перевезення по Україні</a></li>
-        <li><a href="#">Міжнародні вантажні перевезення (Європа)</a></li>
-        <li><a href="#">Перевезення негабаритних вантажів</a></li>
-        <li><a href="#">Перевезення великогабаритних вантажів</a></li>
-        <li><a href="#">Перевезення спецтехніки</a></li>
-        <li><a href="#">Перевезення вантажів тралами</a></li>
-        <li><a href="#">Перевезення екскаваторів</a></li>
-        <li><a href="#">Перевезення обприскувачів</a></li>
-        <li><a href="#">Перевезення Будівельного обладнання</a></li>
-        <li><a href="#">Перевезення Будівельних матеріалів</a></li>
-        <li><a href="#">Перевезення автомобілів</a></li>
-        <li><a href="#">Перевезення трансформаторів</a></li>
-        <li><a href="#">Перевезення длинномерами</a></li>
+        <li><a href="/src/vantazhni-perevezennya-po-ukrayini.html">Вантажні перевезення по Україні</a></li>
+        <li><a href="/src/mizhnarodni-vantazhni-perevezennya.html">Міжнародні вантажні перевезення (Європа)</a></li>
+        <li><a href="/src/perevezennya-negabaritnih-vantazhiv.html">Перевезення негабаритних вантажів</a></li>
+        <li><a href="/src/perevezennya-velikogabaritnih-vantazhiv.html">Перевезення великогабаритних вантажів</a></li>
+        <li><a href="/src/perevezennya-spectehniki-sho-neobhidno-znati.html">Перевезення спецтехніки</a></li>
+        <li><a href="/src/perevezennya-vantazhiv-tralami.html">Перевезення вантажів тралами</a></li>
+        <li><a href="/src/perevezennya-ekskavatoriv.html">Перевезення екскаваторів</a></li>
+        <li><a href="/src/perevezennya-obpriskuvachiv.html">Перевезення обприскувачів</a></li>
+        <li><a href="/src/perevezennya-budivelnogo-obladnannya.html">Перевезення Будівельного обладнання</a></li>
+        <li><a href="/src/u-chomu-perevozyat-budivelni-materiali.html">Перевезення Будівельних матеріалів</a></li>
+        <li><a href="/src/perevezennya-avtomobiliv.html">Перевезення автомобілів</a></li>
+        <li><a href="/src/perevezennya-transformatoriv.html">Перевезення трансформаторів</a></li>
+        <li><a href="/src/perevezennya-dovgomirami.html">Перевезення длинномерами</a></li>
         <li><a href="#">Перевезення сипучих вантажів</a></li>
         <li><a href="#">Перевезення рідких вантажів</a></li>
         <li><a href="#">Контейнерні перевезення</a></li>
@@ -192,19 +192,18 @@
 
 </header>
 
- <script>
-  // Получаем элементы, с которыми будем работать
+<script>
+
   const dropdownTitle = document.querySelector('.dropdown-title');
   const dropdownLinks = document.querySelectorAll('.dropdown-content a');
 
-  // Добавляем обработчик события на каждую ссылку
   dropdownLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault(); // Предотвращаем переход по ссылке по умолчанию
-      dropdownTitle.textContent = this.textContent; // Изменяем текст заголовка на текст ссылки
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      dropdownTitle.textContent = this.textContent;
       setTimeout(() => {
-        window.location.href = this.href; // Переходим по ссылке после изменения текста заголовка
-      }, 300); // Добавляем небольшую задержку, чтобы пользователь увидел изменение текста
+        window.location.href = this.href;
+      }, 300);
     });
   });
 </script>
