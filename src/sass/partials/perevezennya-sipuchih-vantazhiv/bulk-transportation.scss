@@ -1,0 +1,94 @@
+// bulk-transportation
+
+.bulk-transportation {
+  @include section-padding;
+}
+
+.types-of-bulk-cargo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .bg-item {
+    @include desktop {
+      padding: 45px;
+    }
+
+    @include mobile {
+      padding: 15px 10px;
+      min-height: 276px;
+    }
+
+    @include tablet {
+      padding: 20px 15px;
+    }
+  }
+}
+
+// types-of-bulk-cargo
+.types-of-bulk-cargo-wrap {
+  position: relative;
+  @include desktop {
+    width: 635px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 122px;
+    height: 10px;
+    transform: rotate(180deg);
+    background: #ff4f28;
+
+    @include mobile {
+      height: 5px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: -30px;
+    width: 68px;
+    height: 10px;
+    transform: rotate(-90deg);
+    background: #ff4f28;
+
+    @include mobile {
+      height: 5px;
+    }
+  }
+}
+
+// bulk-transport-methods-wrap
+.bulk-transport-methods-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @include tablet {
+    width: 50%;
+    gap: 20px;
+  }
+}
+
+.xxl-logistics-bulk-cargo-booking {
+  margin-top: 100px;
+  padding-bottom: 91px;
+  background: #f0f0f0;
+}

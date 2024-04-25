@@ -1,0 +1,21 @@
+.container-transportation {
+  @include section-padding;
+}
+
+.wrap-container {
+  gap: 34px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.container-transport-preparation-wrap {
+  @include desktop {
+    width: 602px;
+  }
+}

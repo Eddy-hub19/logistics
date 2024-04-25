@@ -1,0 +1,50 @@
+.long-load-transportation {
+  @include section-padding;
+}
+
+// long-load-types
+
+.long-load-types-wrap {
+  .long-load-types-list {
+    gap: 51px;
+
+    @include mobile {
+      gap: 30px;
+    }
+
+    @include tablet {
+      gap: 30px;
+    }
+  }
+}
+
+.long-load-types-list {
+  .our-fleet-list__wrap-descr {
+    width: 265px;
+
+    @include mobile {
+      width: 40%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.long-load-types-wrap {
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.long-load-types-wrap .long-load-types-list {
+  @include mobile {
+    flex-direction: column;
+  }
+}

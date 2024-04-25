@@ -72,6 +72,18 @@
 // perevezennya-transformatoriv
 @import "./partials/perevezennya-transformatoriv/transformer-transportation.scss";
 
+// perevezennya-dovgomirami
+@import "./partials/perevezennya-dovgomirami/long-load-transportation.scss";
+
+// perevezennya-sipuchih-vantazhiv
+@import "./partials/perevezennya-sipuchih-vantazhiv/bulk-transportation.scss";
+
+// perevezennya-ridkih-vantazhiv
+@import "./partials/perevezennya-ridkih-vantazhiv/liquid-cargo-transportation.scss";
+
+// kontejnerni-perevezennya
+@import "./partials/kontejnerni-perevezennya/container-transportation.scss";
+
 .list {
   display: flex;
   padding-left: 27px;

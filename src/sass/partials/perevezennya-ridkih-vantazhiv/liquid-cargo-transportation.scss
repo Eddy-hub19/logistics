@@ -1,0 +1,27 @@
+.liquid-cargo-transportation {
+  @include section-padding;
+}
+
+// liquid-cargo-transportation-tips
+.liquid-cargo-transportation-tips-wrap {
+  gap: 47px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include tablet {
+    width: 50%;
+    gap: 20px;
+  }
+}
+
+.liquid-cargo-transportation-tips {
+  .list {
+    padding-left: 0px;
+  }
+
+  .bg-item{
+    padding: 15px 10px 15px 35px;
+  }
+}
