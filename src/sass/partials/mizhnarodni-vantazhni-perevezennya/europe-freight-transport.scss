@@ -7,28 +7,6 @@
   }
 }
 
-.wrap-transport {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 9px;
-    flex-shrink: 0;
-    background: $color-accent;
-    margin-top: 39px;
-    display: block;
-
-    @include mobile {
-      width: 100%;
-      height: 5px;
-      margin-top: 10px;
-    }
-  }
-}
-
 .wrap-transport-down {
   margin-top: 78px;
 

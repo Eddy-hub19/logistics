@@ -1,31 +1,3 @@
 .ukrainian-freight-transportation {
   @include section-padding;
-  // padding-bottom: 91px;
-
-  @include mobile {
-    padding-top: 30px;
-    padding-bottom: 0;
-  }
-}
-
-.wrap-transport {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 9px;
-    flex-shrink: 0;
-    background: $color-accent;
-    margin-top: 39px;
-    display: block;
-
-    @include mobile {
-      width: 100%;
-      height: 5px;
-      margin-top: 10px;
-    }
-  }
 }

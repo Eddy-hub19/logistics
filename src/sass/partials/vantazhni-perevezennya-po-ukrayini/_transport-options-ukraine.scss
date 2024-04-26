@@ -2,12 +2,10 @@
   align-items: baseline;
   justify-content: space-between;
 
-  // @include mobile {
-  //   display: flex;
-  //   flex-wrap: nowrap;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
+  @include mobile {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
 
   .our-fleet-list__item-img {
     @include mobile {

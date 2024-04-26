@@ -2,19 +2,31 @@
   @include section-padding;
 }
 
+.main-margin {
+  position: relative;
+}
+
 .border {
-  width: 100%;
+  // position: absolute;
+  width: calc(100% - 60px);
   height: 9px;
   flex-shrink: 0;
   background: #ff4f28;
   margin-top: 39px;
+  @include desktop {
+    top: 38.2%;
+    left: 0;
+  }
 
   @include mobile {
-    margin-top: 10px;
+    width: calc(100% - 16px);
+    height: 5px;
+    // top: 120px;
   }
 
   @include tablet {
-    margin-top: 20px;
+    // top: 170px;
+    height: 7px;
   }
 }
 
