@@ -7,6 +7,11 @@
     gap: 0px;
   }
 
+  @include tablet {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+
   .our-fleet-list__item-img {
     @include mobile {
       display: none;

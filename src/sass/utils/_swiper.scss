@@ -1,4 +1,5 @@
 .swiper-wrapper {
+  overflow: hidden;
   .swiper-slide {
     width: initial;
 
@@ -7,7 +8,7 @@
     }
 
     @include tablet {
-      width: 100%;
+      width: 50%;
     }
   }
 }
