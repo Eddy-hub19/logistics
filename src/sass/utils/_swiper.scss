@@ -1,39 +1,42 @@
-.swiper-wrapper {
-  overflow: hidden;
-  .swiper-slide {
-    width: initial;
+// Общие стили для слайдера
+.swiper-container,
+.swiper-container1,
+.swiper-container2,
+.swiper-container3,
+.swiper-container4,
+.swiper-container5 {
+  overflow-x: hidden;
+  position: relative;
 
-    @include mobile {
-      width: 100%;
-    }
-
-    @include tablet {
-      width: 50%;
-    }
-  }
-}
-
-.swiper-container {
   @include mobile {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    position: relative;
-    overflow-x: hidden;
-
-    justify-content: center;
-    align-items: baseline;
   }
 }
 
-.swiper-container2 {
+// Стили для слайдов
+.swiper-slide {
   @include mobile {
-    overflow-x: hidden;
-    position: relative;
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: initial !important;
   }
 }
 
-.swiper-pagination2 {
+// Стили пагинации
+.swiper-pagination,
+.swiper-pagination1,
+.swiper-pagination2,
+.swiper-pagination3,
+.swiper-pagination4,
+.swiper-pagination5 {
   text-align: center;
   stroke-width: 1px;
   stroke: #f0f0f0;
@@ -46,24 +49,7 @@
   }
 }
 
-.swiper-container3 {
-  overflow-x: hidden;
-  position: relative;
-}
-
-.swiper-pagination3 {
-  text-align: center;
-  stroke-width: 1px;
-  stroke: #f0f0f0;
-  margin-top: 20px;
-  cursor: pointer;
-  position: relative;
-
-  @include desktop {
-    display: none;
-  }
-}
-
+// Стили для активной точки пагинации
 .swiper-pagination-bullet-active {
   stroke-width: 1px !important;
   stroke: #f0f0f0 !important;
@@ -72,54 +58,73 @@
   height: 11px !important;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #f0f0f0 !important;
-  width: 11px !important;
-  height: 11px !important;
+// Общие стили для точек пагинации
+.popular-vehicles {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #f0f0f0 !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
 }
 
+.key-benefits {
+  .swiper-pagination-bullet-active {
+    background-color: #434343 !important;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    stroke-width: 1px !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+}
+
+// Стили для кнопок "Предыдущий" и "Следующий"
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next,
+.swiper-button-prev1,
+.swiper-button-next1,
+.swiper-button-prev2,
+.swiper-button-next2,
+.swiper-button-prev3,
+.swiper-button-next3,
+.swiper-button-prev4,
+.swiper-button-next4,
+.swiper-button-prev5,
+.swiper-button-next5 {
+  cursor: pointer;
+
   @include desktop {
     display: none !important;
   }
 }
 
-.swiper-button-prev2 {
-  position: absolute;
-  left: 20%;
-}
-.swiper-button-next2 {
-  position: absolute;
-  right: 20%;
-}
-
-.swiper-button-prev3 {
-  position: absolute;
-  left: 20%;
-}
-.swiper-button-next3 {
-  position: absolute;
-  right: 20%;
-}
-
+// Позиционирование кнопок "Предыдущий" и "Следующий"
+.swiper-button-prev1,
 .swiper-button-prev2,
-.swiper-button-next2 {
-  cursor: pointer;
-  @include desktop {
-    display: none;
-  }
-}
-
 .swiper-button-prev3,
-.swiper-button-next3 {
-  cursor: pointer;
-  @include desktop {
-    display: none;
-  }
+.swiper-button-prev4,
+.swiper-button-prev5,
+.swiper-button-prev6,
+.swiper-button-prev7 {
+  position: absolute;
+  left: 20%;
 }
 
+.swiper-button-next1,
+.swiper-button-next2,
+.swiper-button-next3,
+.swiper-button-next4,
+.swiper-button-next5,
+.swiper-button-next6,
+.swiper-button-next7 {
+  position: absolute;
+  right: 20%;
+}
+
+// Общие стили для контейнера кнопок
 .swiper-btn-container {
   margin-top: 20px;
   display: flex;

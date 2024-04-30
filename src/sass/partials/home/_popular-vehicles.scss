@@ -21,18 +21,15 @@
 .grid-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 25px;
 
   @include mobile {
     flex-direction: row;
-    // align-items: stretch;
     gap: 0;
   }
 
   @include tablet {
     flex-direction: row;
-    // align-items: stretch;
     gap: 0;
   }
 

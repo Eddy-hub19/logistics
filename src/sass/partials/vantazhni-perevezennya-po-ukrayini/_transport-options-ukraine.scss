@@ -2,6 +2,18 @@
   align-items: baseline;
   justify-content: space-between;
 
+  &__item {
+    img {
+      @include mobile {
+        width: 100%;
+      }
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+
   @include mobile {
     flex-wrap: nowrap;
     gap: 0px;
@@ -16,14 +28,24 @@
     @include mobile {
       display: none;
     }
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
 .transport-options-wrap {
   padding: 15px 20px;
   background: #f0f0f0;
-  width: 406px;
+  @include desktop {
+    width: 406px;
+  }
   min-height: 246px;
+
+  @include mobile {
+    width: 100%;
+  }
 
   @include mobile {
     width: 100%;
