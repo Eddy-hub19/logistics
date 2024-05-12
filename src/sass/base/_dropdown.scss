@@ -40,6 +40,10 @@
   transition: max-height 0.3s ease;
 }
 
+.active {
+  color: #ff4f28 !important;
+}
+
 .dropdown-content.show {
   display: block;
   position: absolute;

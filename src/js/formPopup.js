@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const phonePopup = document.querySelector('.phone-popup-mobile');
 
   popup.addEventListener('click', function () {
-    contentPopup.style.display =
-      contentPopup.style.display === 'none' ? 'block' : 'none';
+    contentPopup.style.display = contentPopup.style.display === 'none' ? 'block' : 'none';
     phonePopup.style.display = 'none';
   });
 

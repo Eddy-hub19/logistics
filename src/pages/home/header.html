@@ -135,22 +135,28 @@
     <!-- Hamnurger-menu  -->
     <div class="mobile-menu hamburger-menu">
       <ul class="mobile-menu-list">
-        <li><a href="/src/vantazhni-perevezennya-po-ukrayini.html">Вантажні перевезення по Україні</a></li>
-        <li><a href="/src/mizhnarodni-vantazhni-perevezennya.html">Міжнародні вантажні перевезення (Європа)</a></li>
-        <li><a href="/src/perevezennya-negabaritnih-vantazhiv.html">Перевезення негабаритних вантажів</a></li>
-        <li><a href="/src/perevezennya-velikogabaritnih-vantazhiv.html">Перевезення великогабаритних вантажів</a></li>
-        <li><a href="/src/perevezennya-spectehniki-sho-neobhidno-znati.html">Перевезення спецтехніки</a></li>
-        <li><a href="/src/perevezennya-vantazhiv-tralami.html">Перевезення вантажів тралами</a></li>
-        <li><a href="/src/perevezennya-ekskavatoriv.html">Перевезення екскаваторів</a></li>
-        <li><a href="/src/perevezennya-obpriskuvachiv.html">Перевезення обприскувачів</a></li>
-        <li><a href="/src/perevezennya-budivelnogo-obladnannya.html">Перевезення Будівельного обладнання</a></li>
-        <li><a href="/src/u-chomu-perevozyat-budivelni-materiali.html">Перевезення Будівельних матеріалів</a></li>
-        <li><a href="/src/perevezennya-avtomobiliv.html">Перевезення автомобілів</a></li>
-        <li><a href="/src/perevezennya-transformatoriv.html">Перевезення трансформаторів</a></li>
-        <li><a href="/src/perevezennya-dovgomirami.html">Перевезення длинномерами</a></li>
-        <li><a href="/src/perevezennya-sipuchih-vantazhiv.html">Перевезення сипучих вантажів</a></li>
-        <li><a href="/src/perevezennya-ridkih-vantazhiv.html">Перевезення рідких вантажів</a></li>
-        <li><a href="/src/kontejnerni-perevezennya.html">Контейнерні перевезення</a></li>
+        <li class="mobile-menu-item"><a href="/src/vantazhni-perevezennya-po-ukrayini.html">Вантажні перевезення по Україні</a></li>
+        <li class="mobile-menu-item"><a href="/src/mizhnarodni-vantazhni-perevezennya.html">Міжнародні вантажні перевезення
+            (Європа)</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-negabaritnih-vantazhiv.html">Перевезення негабаритних вантажів</a>
+        </li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-velikogabaritnih-vantazhiv.html">Перевезення великогабаритних
+            вантажів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-spectehniki-sho-neobhidno-znati.html">Перевезення спецтехніки</a>
+        </li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-vantazhiv-tralami.html">Перевезення вантажів тралами</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-ekskavatoriv.html">Перевезення екскаваторів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-obpriskuvachiv.html">Перевезення обприскувачів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-budivelnogo-obladnannya.html">Перевезення Будівельного
+            обладнання</a></li>
+        <li class="mobile-menu-item"><a href="/src/u-chomu-perevozyat-budivelni-materiali.html">Перевезення Будівельних
+            матеріалів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-avtomobiliv.html">Перевезення автомобілів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-transformatoriv.html">Перевезення трансформаторів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-dovgomirami.html">Перевезення длинномерами</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-sipuchih-vantazhiv.html">Перевезення сипучих вантажів</a></li>
+        <li class="mobile-menu-item"><a href="/src/perevezennya-ridkih-vantazhiv.html">Перевезення рідких вантажів</a></li>
+        <li class="mobile-menu-item"><a href="/src/kontejnerni-perevezennya.html">Контейнерні перевезення</a></li>
       </ul>
     </div>
 
@@ -193,17 +199,40 @@
 </header>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownTitle = document.querySelector('.dropdown-title');
+    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+    const dropdownLinksMobile = document.querySelectorAll('.mobile-menu-item a');
+    const currentPageTitle = document.title;
 
-  const dropdownTitle = document.querySelector('.dropdown-title');
-  const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+    // Check if the page URL contains a hash, if so, remove it
+    const currentPagePath = window.location.pathname.split('#')[0];
 
-  dropdownLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-      dropdownTitle.textContent = this.textContent;
-      setTimeout(() => {
-        window.location.href = this.href;
-      }, 500);
+    // Iterate over all links in the dropdown menu
+    dropdownLinks.forEach(link => {
+      // Compare the link path with the current page path
+      if (link.pathname === currentPagePath) {
+        // If the link leads to the current page, set its text as dropdownTitle
+        dropdownTitle.textContent = link.textContent;
+      };
+
+      if (link.getAttribute('href') === window.location.pathname) {
+        // Add the "active" class to highlight the active link
+        link.classList.add('active');
+      }
     });
+
+    // If dropdownTitle is still empty (e.g., if there are no links on the current page), set it to the page title
+    if (!dropdownTitle.textContent.trim()) {
+      dropdownTitle.textContent = currentPageTitle;
+    }
+
+    dropdownLinksMobile.forEach(link => {
+      if (link.getAttribute('href') === window.location.pathname) {
+
+        link.classList.add('active');
+      }
+    })
+
   });
 </script>

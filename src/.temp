@@ -1,5 +1,5 @@
 <!-- <?php include ('./partials/home/header.html') ?> -->
-    <!-- <?php include ('./partials/home/hero.html') ?>
+<!-- <?php include ('./partials/home/hero.html') ?>
     <?php include ('./partials/home/our-fleet.html') ?>
     <?php include ('./partials/home/why-choose-us.html') ?>
     <?php include ('./partials/home/transport-services.html') ?>
@@ -7,3 +7,16 @@
     <?php include ('./partials/home/popular-vehicles.html') ?>
     <?php include ('./partials/home/cargo-features.html') ?> -->
 <!-- <?php include ('./partials/home/footer.html') ?> -->
+
+
+<!-- <include src="./pages/home/header.html"></include> -->
+
+<!-- <include src="./pages/home/hero.html"></include>
+    <include src="./pages/home/our-fleet.html"></include>
+    <include src="./pages/home/why-choose-us.html"></include>
+    <include src="./pages/home/cargo-advantages.html"></include>
+    <include src="./pages/home/transport-services.html"></include>
+    <include src="./pages/home/pricing-factors.html"></include>
+    <include src="./pages/home/popular-vehicles.html"></include>
+    <include src="./pages/home/cargo-features.html"></include> -->
+<!-- <include src="./pages/home/footer.html"></include> -->

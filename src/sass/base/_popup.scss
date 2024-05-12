@@ -39,3 +39,29 @@
 .form-close-icon {
   cursor: pointer;
 }
+
+// phone-modal-popup
+
+.phone-modal-popup {
+  position: fixed;
+  z-index: 99999;
+  top: 7%;
+  height: 100vh !important;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+
+  @include tablet {
+    width: 100% !important;
+    height: 100vh;
+    top: 15%;
+  }
+}
+
+.close-icon-form {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  z-index: 99999;
+  cursor: pointer;
+}
