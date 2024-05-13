@@ -32,7 +32,12 @@
 
 .wrap {
   display: flex;
-  flex-direction: column;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 // trailer-transportation-features

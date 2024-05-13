@@ -11,8 +11,11 @@
   display: none;
   overflow: hidden;
 
+  @include tablet {
+    top: 110px;
+  }
+
   .phone-popup-title {
-    // color: black;
     font-family: $font-roboto-medium;
   }
 

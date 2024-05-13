@@ -31,6 +31,10 @@
   @include mobile {
     display: none;
   }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .dropdown-content {
