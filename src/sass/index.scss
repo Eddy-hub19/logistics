@@ -257,6 +257,10 @@ img {
     margin-top: 76px;
   }
 
+  @include tablet {
+    margin-top: 80px;
+  }
+
 }
 
 .column {
@@ -290,4 +294,11 @@ img {
   @include tablet {
     margin-bottom: 60px;
   }
+}
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

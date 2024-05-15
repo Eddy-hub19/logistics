@@ -18,16 +18,8 @@
   }
 
   @include tablet {
-    padding: 30px 26px;
+    padding: 20px 16px;
   }
-
-  // @include tablet {
-  //   flex-direction: column;
-  //   padding: 15px;
-  //   display: flex;
-  //   align-items: flex-start;
-  //   justify-content: flex-start;
-  // }
 }
 
 .content-wrap {
@@ -87,19 +79,11 @@
   @include mobile {
     display: none;
   }
-  
+
   @include tablet {
     display: none;
   }
 
-  // @include tablet {
-  //   display: flex;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   margin: 0;
-  //   margin-top: 30px;
-  //   width: 100%;
-  // }
 }
 
 .nav-info {
@@ -170,6 +154,11 @@
       background: linear-gradient(142deg, $color-accent 71.63%, #ffa490 80.08%, $color-accent 90.75%);
       color: white;
     }
+
+    @include tablet {
+      background: linear-gradient(142deg, $color-accent 71.63%, #ffa490 80.08%, $color-accent 90.75%);
+      color: white;
+    }
   }
 
   &:active {
@@ -192,10 +181,6 @@
 .mobile-svg {
   margin-right: 25px;
 
-  // @include tablet {
-  //   display: none;
-  // }
-
   @include desktop {
     display: none;
   }
@@ -207,9 +192,7 @@
     height: 26px;
   }
   cursor: pointer;
-  // @include tablet {
-  //   display: none;
-  // }
+
   @include desktop {
     display: none;
   }

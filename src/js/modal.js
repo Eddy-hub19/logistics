@@ -1,6 +1,10 @@
 // Function to check if the screen is mobile or tablet
 export const isMobileOrTablet = () => {
-  return window.innerWidth <= 768;
+  const screenWidth = window.innerWidth;
+  const isMobile = screenWidth <= 768;
+  const isTablet = screenWidth > 768 && screenWidth <= 1439;
+
+  return isMobile || isTablet;
 };
 
 // Function to open the popup on mobile or tablet screen
@@ -29,11 +33,10 @@ export const closePopup = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const openModalBtns = document.querySelectorAll('.openModalBtnClass'); 
+  const openModalBtns = document.querySelectorAll('.openModalBtnClass');
   console.log(openModalBtns);
   openModalBtns.forEach(openModalBtn => {
     openModalBtn.addEventListener('click', event => {
-
       openPopupOnMobileOrTablet(event);
     });
   });

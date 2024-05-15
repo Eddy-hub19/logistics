@@ -13,10 +13,15 @@
 
   @include tablet {
     top: 110px;
+    top: 80px;
   }
 
   .phone-popup-title {
     font-family: $font-roboto-medium;
+
+    @include tablet {
+      color: black;
+    }
   }
 
   .phone-info .phone-number {
@@ -56,7 +61,7 @@
   @include tablet {
     width: 100% !important;
     height: 100vh;
-    top: 15%;
+    top: 6%;
   }
 }
 

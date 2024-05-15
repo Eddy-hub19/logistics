@@ -81,8 +81,14 @@
 
 .form-popup {
   position: absolute;
-  top: 70%;
+  top: 63%;
   z-index: 9999;
   background: black;
   height: 100vh !important;
+}
+
+.mobile{
+  .close-icon {
+    color: white;
+  }
 }

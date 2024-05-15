@@ -7,7 +7,6 @@
 }
 
 .border {
-  // position: absolute;
   width: calc(100% - 60px);
   height: 9px;
   flex-shrink: 0;
@@ -21,11 +20,9 @@
   @include mobile {
     width: calc(100% - 16px);
     height: 5px;
-    // top: 120px;
   }
 
   @include tablet {
-    // top: 170px;
     height: 7px;
   }
 }
